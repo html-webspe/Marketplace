@@ -1,0 +1,255 @@
+//====================================================================================================
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+   border-bottom: 1px solid rgba(199, 149, 126, 0.3);
+   padding: 16px 24px;
+
+
+   @media (min-width:1600px) {
+      margin: 0 75px;
+      padding: 34px 0;
+   }
+
+   &__logo {
+      max-width: 254px;
+      height: 71px;
+      z-index: 101;
+
+      @media (max-width:$md3+px) {
+         width: 160px;
+         height: 44px;
+      }
+   }
+
+   &-social {
+      display: flex;
+   }
+}
+
+.menu-header {
+   @media (max-width:1200px) {
+      position: fixed;
+      height: 100%;
+      right: -100%;
+      transition: right 0.4s ease 0s;
+      background: rgba(0, 0, 0, 1);
+      padding: 80px 15px;
+      z-index: 100;
+
+      &__list {
+         margin-bottom: 61px;
+      }
+
+      &__item {
+         text-align: center;
+
+         &:not(:last-child) {
+            margin-bottom: 28px;
+         }
+      }
+
+      &__link {
+         transition: color 0.3s ease 0s;
+         font-size: 20px;
+         line-height: 24px;
+         color: #fff;
+
+         &:hover {
+            color: $acentColor;
+            text-shadow: 0 0 .75px $acentColor, 0 0 .75px $acentColor;
+         }
+      }
+   }
+
+   @media (max-width:$md3+px) {
+      width: 100%;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   @media (min-width:$md3+px) {
+      width: 50%;
+      top: 104px;
+   }
+
+   &.active {
+      right: 0;
+
+      &:after {
+         content: '';
+         background-color: #0B0B0B;
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 77px;
+      }
+   }
+
+   @media (min-width:1200px) {
+      margin: 0 15px;
+
+      &__list {
+         display: flex;
+      }
+
+      &__item {
+         &:not(:last-child) {
+            margin-right: 24px;
+         }
+      }
+
+      &__link {
+         transition: color 0.3s ease 0s;
+         @include adaptiv-font(18, 10);
+         line-height: 24px;
+
+         &:hover {
+            color: $acentColor;
+            text-shadow: 0 0 .75px $acentColor, 0 0 .75px $acentColor;
+         }
+      }
+   }
+
+   @media (min-width:1500px) {
+      &__item {
+         &:not(:last-child) {
+            margin-right: 55px;
+         }
+      }
+   }
+}
+
+.contacts-header {
+   display: flex;
+   align-items: center;
+
+   @media (max-width:1200px) {
+      margin-right: 70px;
+   }
+
+   @media (max-width:1200px) {
+      margin-right: 0;
+      flex-direction: column;
+   }
+
+   &__tel {
+      @include adaptiv-font(25, 18);
+      line-height: 30px;
+      margin-right: 20px;
+
+      &:before {
+         margin-right: 18px;
+
+         @media (min-width:1200px) {
+            display: none;
+         }
+      }
+
+      @media (max-width:1700px) {
+         display: none;
+      }
+
+      @media (max-width:1200px) {
+         display: block;
+         margin-bottom: 61px;
+         color: #fff;
+         margin-right: 0;
+      }
+   }
+
+   &__item {
+      flex: 0 0 60px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: $acentColor;
+      text-align: center;
+      transition: background 0.3s ease 0s;
+
+      &:not(:last-child) {
+         margin-right: 20px;
+      }
+
+      &:before {
+         @include adaptiv-font(28, 22);
+
+         line-height: 60px;
+         color: #fff;
+      }
+
+      &:hover {
+         background-color: $acentColorLight;
+
+         &:before {
+            opacity: 0.8;
+         }
+      }
+   }
+}
+
+@media (max-width:1200px) {
+   .header-menu__icon {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 39px;
+      width: 34px;
+      height: 20px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      z-index: 101;
+
+      &:before,
+      &:after,
+      span {
+         position: absolute;
+         left: 0;
+         width: 100%;
+         height: 10%;
+         transition: all 0.3s ease 0s;
+         background-color: $acentColor;
+
+      }
+
+      &:before,
+      &:after {
+         content: '';
+      }
+
+      &:before {
+         top: 0;
+      }
+
+      &:after {
+         bottom: 0;
+      }
+
+      span {
+         top: 50%;
+         transform: scale(1) translate(0px, -50%);
+      }
+
+      &.active {
+         span {
+            transform: scale(0) translate(0px, -50%);
+         }
+
+         &:before {
+            top: 50%;
+            transform: rotate(-45deg) translate(0px, -50%);
+         }
+
+         &:after {
+            bottom: 50%;
+            transform: rotate(45deg) translate(0px, 50%);
+         }
+      }
+
+   }
+}

@@ -1,0 +1,134 @@
+//<МИКСИНЫ>===============================================================================================
+@import "ui/_mixins";
+//</МИКСИНЫ>===============================================================================================
+
+//<Подключаем шрифты>=======================================================================================
+@import "ui/_fonts";
+//</Подключаем шрифты>=======================================================================================
+
+//<Подключаем переменные>=======================================================================================
+@import "_vars";
+//</Подключаем переменные>=======================================================================================
+
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  font-size: 12px;
+}
+
+
+body {
+  margin: 0;
+  @include adaptiv-font(24, 14);
+  line-height: $lineHeight;
+  font-family: $fontfamily;
+  font-weight: 400;
+  color: $acentColorDarck;
+}
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+
+  &.loaded {}
+}
+
+.section {
+  position: relative;
+}
+
+.page-main {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+
+.row {
+  display: flex;
+}
+
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+.container {
+  max-width: $containerMaxWidth;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: $containerPadding;
+  padding-right: $containerPadding;
+}
+
+//</ОСНОВНАЯ СЕТКА>===========================================================================================================
+
+
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+
+@import "ui/_btn";
+@import "blocks/_form";
+@import "ui/_ui";
+@import "ui/_modal";
+@import "blocks/_section";
+
+@import "blocks/_title";
+
+@import "blocks/_header";
+@import "blocks/_home";
+@import "blocks/_object";
+@import "blocks/_infrasrtucture";
+@import "blocks/_download";
+@import "blocks/_callback";
+@import "blocks/_experts";
+
+
+@import "blocks/_footer";

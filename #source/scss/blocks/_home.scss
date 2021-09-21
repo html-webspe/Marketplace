@@ -1,0 +1,67 @@
+.home {
+
+   &__body {
+      padding: 65px 15px 15px 15px;
+
+      @media (max-width:$md3+px) {
+         text-align: center;
+      }
+
+      @media (min-width:$md3+px) {
+         padding-left: 54px;
+         padding-right: 54px;
+      }
+
+      @media (min-width:1400px) {
+         padding: 48px 150px 0px 108px;
+      }
+   }
+
+   &__row {
+      @media (min-width:1200px) {
+         display: flex;
+         align-items: center;
+      }
+
+      @media (min-width:1600px) {
+         align-items: flex-end;
+      }
+   }
+
+   &__col {
+      display: flex;
+      justify-content: center;
+
+      &:last-child {
+         @media (min-width:$md2+px) {
+            padding-bottom: 54px;
+         }
+      }
+   }
+
+   &__img {
+      @media (max-width:1200px) {
+         display: none;
+      }
+   }
+
+   &__download-block {
+      margin-top: 72px;
+
+      @media (max-width:$md2+px) {
+         min-height: 350px;
+      }
+
+      @media (min-width:1500px) {
+         margin-top: 104px;
+      }
+   }
+
+   &__download-input {
+      border-bottom: 1px solid #000000;
+
+      &::placeholder {
+         color: #000000;
+      }
+   }
+}

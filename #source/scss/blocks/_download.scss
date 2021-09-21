@@ -1,0 +1,139 @@
+.download {
+   position: relative;
+   background-color: #0E0E0E;
+   background-image: url(../img/download/download-bg.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   padding-top: 67px;
+
+   @media (min-width:$md3+px) {
+      padding-top: 82px;
+      padding-bottom: 204px;
+   }
+
+   &__title {
+      @media (max-width:$md2+px) {
+         margin-bottom: 43px;
+      }
+   }
+
+   &__body {
+      position: relative;
+      z-index: 1;
+   }
+
+   &__content {
+      @media (min-width:$md3+px) {
+         display: flex;
+         justify-content: space-between;
+      }
+   }
+
+   &__text {
+      @include adaptiv-font(24, 14);
+      line-height: 1.2;
+      color: #fff;
+      margin-bottom: 50px;
+      padding-right: 20px;
+
+      @media (max-width:$md3+px) {
+         text-align: center;
+      }
+
+      @media (min-width:$md2+px) {
+         padding-top: 81px;
+         max-width: 539px;
+      }
+   }
+
+   &__img {
+      @media (max-width:$md3+px) {
+         position: relative;
+         top: -126px;
+      }
+
+      @media (min-width:$md3+px) {
+         position: absolute;
+         bottom: -53px;
+         left: 0;
+         z-index: 1;
+         width: 390px;
+      }
+
+      @media (min-width:1700px) {
+         width: auto;
+      }
+   }
+
+   .download-block {
+      padding-top: 40px;
+      padding-bottom: 44px;
+
+      @media (max-width:$md3+px) {
+         width: 330px;
+         margin: 0 auto;
+      }
+
+      @media (min-width:$md2+px) {
+         flex: 0 1 470px;
+         padding: 64px 59px;
+      }
+   }
+}
+
+
+
+
+.download-block {
+   border: 1px solid rgba(239, 189, 156, 0.5);
+   outline: 5px solid $acentColorLight;
+   outline-offset: -18px;
+   text-align: center;
+   flex: 0 0 330px;
+   padding: 0 42px;
+
+
+   @media (min-width:$md2+px) {
+      flex: 0 1 470px;
+      padding: 64px 59px;
+   }
+
+   &__img {
+      margin-top: -160px;
+      position: relative;
+      z-index: 2;
+
+      @media (max-width:$md2+px) {
+         margin-top: -64px;
+      }
+   }
+
+   &__title {
+      @include adaptiv-font(24, 14);
+      line-height: 1.2;
+      font-weight: 500;
+      margin-bottom: 32px;
+      color: #FFFFFF;
+   }
+
+   &__text {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #000000;
+      margin-bottom: 33px;
+
+      @media (max-width:$md2+px) {
+         font-size: 12px;
+         line-height: 15px;
+         margin-bottom: 25px;
+      }
+   }
+
+   &__btn {
+      width: 100%;
+      background-color: $acentColor;
+      color: #fff;
+   }
+}

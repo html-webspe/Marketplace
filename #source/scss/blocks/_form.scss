@@ -1,0 +1,102 @@
+.form {}
+
+
+/*                  callback-Form               */
+.callback {
+
+   &__form {
+
+      @media (max-width:$md3+px) {
+         width: 245px;
+         margin: 0 auto;
+      }
+
+      @media (min-width:$md3+px) {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+
+      }
+   }
+
+   &__form-input {
+      border: 1px solid #FFFFFF;
+      border-radius: 150px;
+      background: transparent;
+      color: #FFFFFF;
+      transition: border 0.3s ease 0s;
+
+      @media (max-width:$md3+px) {
+         margin-bottom: 20px;
+         padding: 16px 0;
+         padding-left: 44px;
+         width: 100%;
+      }
+
+      @media (min-width:$md3+px) {
+         flex: 0 1 370px;
+         padding: 30px 46px;
+      }
+
+      &:focus {
+         border: 1px solid $acentColor;
+      }
+   }
+
+   &__form-btn {
+      color: #2F2826;
+      transition: background 0.3s ease 0s;
+
+      @media (max-width:$md3+px) {
+         width: 100%;
+      }
+
+
+
+      &:hover {
+         background-color: $acentColor;
+      }
+   }
+
+   span {
+      background-color: $acentColorLight;
+      flex: 1;
+      height: 1px;
+      margin: 0 30px;
+   }
+}
+
+/*                 // callback-Form               */
+
+
+.download-block {
+   &__input {
+      background: transparent;
+      padding-bottom: 12px;
+      border: none;
+      border-bottom: 2px solid #FFFFFF;
+      margin-bottom: 51px;
+
+      &::placeholder {
+         color: #fff;
+      }
+
+      @media (max-width:$md2+px) {
+         font-size: 14px;
+         line-height: 17px;
+         width: 100%;
+         padding-bottom: 8px;
+         margin-bottom: 32px;
+      }
+   }
+
+   &__btn {
+      color: #fff;
+      background-color: #BA846E;
+      transition: background 0.3s ease 0s;
+
+      &:hover {
+         background-color: $acentColorLight;
+      }
+   }
+}
