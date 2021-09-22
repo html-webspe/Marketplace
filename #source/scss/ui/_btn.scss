@@ -21,6 +21,10 @@
       padding-bottom: 18px;
    }
 
+   @media (max-width:$md4+px) {
+      width: 100%;
+   }
+
    &:hover {
       background-color: $acentColor;
    }

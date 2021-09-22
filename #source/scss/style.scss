@@ -110,6 +110,73 @@ body {
 }
 
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
+.currency-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.currency-button {
+  width: 50px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid $acentColorLight;
+  color: $acentColorLight;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__current {
+    background: $acentColorLight;
+    color: #fff;
+  }
+}
+
+.crumbs {
+  padding-left: 15px;
+  margin: 27px 0px 65px 0px;
+
+  @media (min-width:1600px) {
+    padding-left: 184px;
+    margin: 46px 0px 100px 0px;
+
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    &:before {
+      margin: 0 13px;
+      font-size: 14px;
+
+      transform: rotate(180deg);
+    }
+
+    @media (max-width:$md3+px) {
+      &:not(:last-child) {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      color: $acentColor;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
 
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
@@ -135,4 +202,8 @@ body {
 @import "blocks/_experts";
 
 
+
 @import "blocks/_footer";
+
+
+@import "object/_object";

@@ -74,31 +74,6 @@
       }
    }
 
-   &__range-buttons {
-      display: flex;
-      justify-content: center;
-      margin-top: 30px;
-   }
-
-   &__range-button {
-      width: 50px;
-      height: 30px;
-      font-size: 20px;
-      line-height: 30px;
-      text-align: center;
-      border: 1px solid $acentColorLight;
-      color: $acentColorLight;
-
-      &:not(:last-child) {
-         margin-right: 20px;
-      }
-   }
-
-   &__range-button--current {
-      background: $acentColorLight;
-      color: #fff;
-   }
-
    &__item {
       position: relative;
 

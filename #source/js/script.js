@@ -116,9 +116,9 @@ $('.filter-dropdown__room').click(function () {
    $('.filter-dropdown__room').removeClass('filter-dropdown__room-current');
    $(this).addClass('filter-dropdown__room-current');
 })
-$('.filter-dropdown__range-button').click(function () {
-   $('.filter-dropdown__range-button').removeClass('filter-dropdown__range-button--current');
-   $(this).addClass('filter-dropdown__range-button--current');
+$('.currency-button').click(function () {
+   $('.currency-button').removeClass('currency-button__current');
+   $(this).addClass('currency-button__current');
 })
 
 $('.select-filter__button').click(function () {
@@ -272,4 +272,24 @@ const swiper = new Swiper('.swiper-container', {
    },
 });
 
+
+
+const cardSlider = new Swiper('.slider-block', {
+   //effect: "fade",
+});
+const sliderNavItem = document.querySelectorAll('.slider-nav__item');
+
+sliderNavItem.forEach((el, index) => {
+   el.setAttribute('data-index', index);
+
+   el.addEventListener('click', (e) => {
+      const index = parseInt(e.currentTarget.dataset.index);
+      cardSlider.slideTo(index);
+
+      document.querySelectorAll('.slider-nav__item').forEach((e) => {
+         e.classList.remove('active');
+      })
+      el.classList.add('active');
+   });
+})
 

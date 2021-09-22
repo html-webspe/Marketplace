@@ -83,6 +83,26 @@
 }
 
 
+.icon-checked:before {
+   content: "\e90f";
+}
+
+.icon-options:before {
+   content: "\e90e";
+}
+
+.icon-floor:before {
+   content: "\e90b";
+}
+
+.icon-repair:before {
+   content: "\e90c";
+}
+
+.icon-square:before {
+   content: "\e90d";
+}
+
 .icon-hexagon:before {
    content: "\e902";
 }
