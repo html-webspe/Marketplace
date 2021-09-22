@@ -28,11 +28,10 @@
 
    &__list {
       border-bottom: 1px solid rgba(229, 229, 229, 0.75);
+      padding-bottom: 22px;
+      margin-bottom: 17px;
 
-      @media (max-width:$md3+px) {
-         padding-bottom: 22px;
-         margin-bottom: 17px;
-      }
+      @media (max-width:$md3+px) {}
    }
 
    &__list--rooms {

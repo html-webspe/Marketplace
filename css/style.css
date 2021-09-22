@@ -877,11 +877,9 @@ input {
   visibility: visible; }
 
 .filter-dropdown__list {
-  border-bottom: 1px solid rgba(229, 229, 229, 0.75); }
-  @media (max-width: 767.98px) {
-    .filter-dropdown__list {
-      padding-bottom: 22px;
-      margin-bottom: 17px; } }
+  border-bottom: 1px solid rgba(229, 229, 229, 0.75);
+  padding-bottom: 22px;
+  margin-bottom: 17px; }
 
 .filter-dropdown__list--rooms {
   display: -webkit-box;
