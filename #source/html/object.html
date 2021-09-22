@@ -21,14 +21,364 @@
                <div class="filter-head__col">
                   <div class="filter-object__select select-filter">
                      <ul class="select-filter__list">
-                        <li class="select-filter__item icon-down-arrow">Тип объекта
-                           
+                        <li class="select-filter__item ">
+                           <button class="select-filter__button icon-down-arrow">Тип объекта</button>
+                           <div class="select-filter__dropdown filter-dropdown">
+                              <ul class="filter-dropdown__list">
+                                 <li class="filter-dropdown__item">
+                                    <label>
+                                       <input type="checkbox" class="filter-dropdown__input">
+                                       <span class="filter-dropdown__checkbox">
+                                          <span class="filter-dropdown__check">
+                                             <span class="filter-dropdown__checked">
+                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none">
+                                                   <path
+                                                      d="M12.1354 0.916954C11.895 0.663099 11.5051 0.663099 11.2646 0.916954L3.88704 8.70443L1.05123 5.71108C0.810761 5.45723 0.42089 5.45725 0.180371 5.71108C-0.0601236 5.96491 -0.0601236 6.37644 0.180371 6.6303L3.45161 10.0832C3.69201 10.3371 4.08217 10.3369 4.32247 10.0832L12.1354 1.8362C12.3759 1.58237 12.3759 1.17081 12.1354 0.916954Z"
+                                                      fill="#010101" />
+                                                </svg>
+                                             </span>
+                                          </span>
+                                          <span class="filter-dropdown__title">Все типы</span>
+                                       </span>
+                                    </label>
+                                 </li>
+                                 <li class="filter-dropdown__item">
+                                    <label>
+                                       <input type="checkbox" class="filter-dropdown__input">
+                                       <span class="filter-dropdown__checkbox">
+                                          <span class="filter-dropdown__check">
+                                             <span class="filter-dropdown__checked">
+                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none">
+                                                   <path
+                                                      d="M12.1354 0.916954C11.895 0.663099 11.5051 0.663099 11.2646 0.916954L3.88704 8.70443L1.05123 5.71108C0.810761 5.45723 0.42089 5.45725 0.180371 5.71108C-0.0601236 5.96491 -0.0601236 6.37644 0.180371 6.6303L3.45161 10.0832C3.69201 10.3371 4.08217 10.3369 4.32247 10.0832L12.1354 1.8362C12.3759 1.58237 12.3759 1.17081 12.1354 0.916954Z"
+                                                      fill="#010101" />
+                                                </svg>
+                                             </span>
+                                          </span>
+                                          <span class="filter-dropdown__title">Апартаменты</span>
+                                       </span>
+                                    </label>
+                                 </li>
+                                 <li class="filter-dropdown__item">
+                                    <label>
+                                       <input type="checkbox" class="filter-dropdown__input">
+                                       <span class="filter-dropdown__checkbox">
+                                          <span class="filter-dropdown__check">
+                                             <span class="filter-dropdown__checked">
+                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none">
+                                                   <path
+                                                      d="M12.1354 0.916954C11.895 0.663099 11.5051 0.663099 11.2646 0.916954L3.88704 8.70443L1.05123 5.71108C0.810761 5.45723 0.42089 5.45725 0.180371 5.71108C-0.0601236 5.96491 -0.0601236 6.37644 0.180371 6.6303L3.45161 10.0832C3.69201 10.3371 4.08217 10.3369 4.32247 10.0832L12.1354 1.8362C12.3759 1.58237 12.3759 1.17081 12.1354 0.916954Z"
+                                                      fill="#010101" />
+                                                </svg>
+                                             </span>
+                                          </span>
+                                          <span class="filter-dropdown__title">Квартиры</span>
+                                       </span>
+                                    </label>
+                                 </li>
+                                 <li class="filter-dropdown__item">
+                                    <label>
+                                       <input type="checkbox" class="filter-dropdown__input">
+                                       <span class="filter-dropdown__checkbox">
+                                          <span class="filter-dropdown__check">
+                                             <span class="filter-dropdown__checked">
+                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none">
+                                                   <path
+                                                      d="M12.1354 0.916954C11.895 0.663099 11.5051 0.663099 11.2646 0.916954L3.88704 8.70443L1.05123 5.71108C0.810761 5.45723 0.42089 5.45725 0.180371 5.71108C-0.0601236 5.96491 -0.0601236 6.37644 0.180371 6.6303L3.45161 10.0832C3.69201 10.3371 4.08217 10.3369 4.32247 10.0832L12.1354 1.8362C12.3759 1.58237 12.3759 1.17081 12.1354 0.916954Z"
+                                                      fill="#010101" />
+                                                </svg>
+                                             </span>
+                                          </span>
+                                          <span class="filter-dropdown__title">Пентхаусы</span>
+                                       </span>
+                                    </label>
+                                 </li>
+                                 <li class="filter-dropdown__item">
+                                    <label>
+                                       <input type="checkbox" class="filter-dropdown__input">
+                                       <span class="filter-dropdown__checkbox">
+                                          <span class="filter-dropdown__check">
+                                             <span class="filter-dropdown__checked">
+                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none">
+                                                   <path
+                                                      d="M12.1354 0.916954C11.895 0.663099 11.5051 0.663099 11.2646 0.916954L3.88704 8.70443L1.05123 5.71108C0.810761 5.45723 0.42089 5.45725 0.180371 5.71108C-0.0601236 5.96491 -0.0601236 6.37644 0.180371 6.6303L3.45161 10.0832C3.69201 10.3371 4.08217 10.3369 4.32247 10.0832L12.1354 1.8362C12.3759 1.58237 12.3759 1.17081 12.1354 0.916954Z"
+                                                      fill="#010101" />
+                                                </svg>
+                                             </span>
+                                          </span>
+                                          <span class="filter-dropdown__title">Таунхаусы</span>
+                                       </span>
+                                    </label>
+                                 </li>
+                              </ul>
+
+                              <button class="filter-dropdown__reset icon-close">Сбросить</button>
+                           </div>
                         </li>
-                        <li class="select-filter__item icon-down-arrow">Жилой комплекс</li>
-                        <li class="select-filter__item icon-down-arrow">Кол-во комнат</li>
-                        <li class="select-filter__item icon-down-arrow">Цена</li>
-                        <li class="select-filter__item icon-down-arrow">Площадь</li>
-                        <li class="select-filter__item icon-down-arrow">Отделка</li>
+                        <li class="select-filter__item">
+                           <button class="select-filter__button icon-down-arrow">Жилой комплекс</button>
+
+                           <div class="select-filter__dropdown filter-dropdown ">
+                              <ul class="filter-dropdown__list">
+                                 <li class="filter-dropdown__item">
+                                    <label>
+                                       <input type="checkbox" class="filter-dropdown__input">
+                                       <span class="filter-dropdown__checkbox">
+                                          <span class="filter-dropdown__check">
+                                             <span class="filter-dropdown__checked">
+                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none">
+                                                   <path
+                                                      d="M12.1354 0.916954C11.895 0.663099 11.5051 0.663099 11.2646 0.916954L3.88704 8.70443L1.05123 5.71108C0.810761 5.45723 0.42089 5.45725 0.180371 5.71108C-0.0601236 5.96491 -0.0601236 6.37644 0.180371 6.6303L3.45161 10.0832C3.69201 10.3371 4.08217 10.3369 4.32247 10.0832L12.1354 1.8362C12.3759 1.58237 12.3759 1.17081 12.1354 0.916954Z"
+                                                      fill="#010101" />
+                                                </svg>
+                                             </span>
+                                          </span>
+                                          <span class="filter-dropdown__title">Capital Towers</span>
+                                       </span>
+                                    </label>
+                                 </li>
+                                 <li class="filter-dropdown__item">
+                                    <label>
+                                       <input type="checkbox" class="filter-dropdown__input">
+                                       <span class="filter-dropdown__checkbox">
+                                          <span class="filter-dropdown__check">
+                                             <span class="filter-dropdown__checked">
+                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none">
+                                                   <path
+                                                      d="M12.1354 0.916954C11.895 0.663099 11.5051 0.663099 11.2646 0.916954L3.88704 8.70443L1.05123 5.71108C0.810761 5.45723 0.42089 5.45725 0.180371 5.71108C-0.0601236 5.96491 -0.0601236 6.37644 0.180371 6.6303L3.45161 10.0832C3.69201 10.3371 4.08217 10.3369 4.32247 10.0832L12.1354 1.8362C12.3759 1.58237 12.3759 1.17081 12.1354 0.916954Z"
+                                                      fill="#010101" />
+                                                </svg>
+                                             </span>
+                                          </span>
+                                          <span class="filter-dropdown__title">Edison House</span>
+                                       </span>
+                                    </label>
+                                 </li>
+                                 <li class="filter-dropdown__item">
+                                    <label>
+                                       <input type="checkbox" class="filter-dropdown__input">
+                                       <span class="filter-dropdown__checkbox">
+                                          <span class="filter-dropdown__check">
+                                             <span class="filter-dropdown__checked">
+                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none">
+                                                   <path
+                                                      d="M12.1354 0.916954C11.895 0.663099 11.5051 0.663099 11.2646 0.916954L3.88704 8.70443L1.05123 5.71108C0.810761 5.45723 0.42089 5.45725 0.180371 5.71108C-0.0601236 5.96491 -0.0601236 6.37644 0.180371 6.6303L3.45161 10.0832C3.69201 10.3371 4.08217 10.3369 4.32247 10.0832L12.1354 1.8362C12.3759 1.58237 12.3759 1.17081 12.1354 0.916954Z"
+                                                      fill="#010101" />
+                                                </svg>
+                                             </span>
+                                          </span>
+                                          <span class="filter-dropdown__title">Eleven</span>
+                                       </span>
+                                    </label>
+                                 </li>
+                                 <li class="filter-dropdown__item">
+                                    <label>
+                                       <input type="checkbox" class="filter-dropdown__input">
+                                       <span class="filter-dropdown__checkbox">
+                                          <span class="filter-dropdown__check">
+                                             <span class="filter-dropdown__checked">
+                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none">
+                                                   <path
+                                                      d="M12.1354 0.916954C11.895 0.663099 11.5051 0.663099 11.2646 0.916954L3.88704 8.70443L1.05123 5.71108C0.810761 5.45723 0.42089 5.45725 0.180371 5.71108C-0.0601236 5.96491 -0.0601236 6.37644 0.180371 6.6303L3.45161 10.0832C3.69201 10.3371 4.08217 10.3369 4.32247 10.0832L12.1354 1.8362C12.3759 1.58237 12.3759 1.17081 12.1354 0.916954Z"
+                                                      fill="#010101" />
+                                                </svg>
+                                             </span>
+                                          </span>
+                                          <span class="filter-dropdown__title">Headliner</span>
+                                       </span>
+                                    </label>
+                                 </li>
+                                 <li class="filter-dropdown__item">
+                                    <label>
+                                       <input type="checkbox" class="filter-dropdown__input">
+                                       <span class="filter-dropdown__checkbox">
+                                          <span class="filter-dropdown__check">
+                                             <span class="filter-dropdown__checked">
+                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none">
+                                                   <path
+                                                      d="M12.1354 0.916954C11.895 0.663099 11.5051 0.663099 11.2646 0.916954L3.88704 8.70443L1.05123 5.71108C0.810761 5.45723 0.42089 5.45725 0.180371 5.71108C-0.0601236 5.96491 -0.0601236 6.37644 0.180371 6.6303L3.45161 10.0832C3.69201 10.3371 4.08217 10.3369 4.32247 10.0832L12.1354 1.8362C12.3759 1.58237 12.3759 1.17081 12.1354 0.916954Z"
+                                                      fill="#010101" />
+                                                </svg>
+                                             </span>
+                                          </span>
+                                          <span class="filter-dropdown__title">Neva Towers</span>
+                                       </span>
+                                    </label>
+                                 </li>
+                                 <li class="filter-dropdown__item">
+                                    <label>
+                                       <input type="checkbox" class="filter-dropdown__input">
+                                       <span class="filter-dropdown__checkbox">
+                                          <span class="filter-dropdown__check">
+                                             <span class="filter-dropdown__checked">
+                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none">
+                                                   <path
+                                                      d="M12.1354 0.916954C11.895 0.663099 11.5051 0.663099 11.2646 0.916954L3.88704 8.70443L1.05123 5.71108C0.810761 5.45723 0.42089 5.45725 0.180371 5.71108C-0.0601236 5.96491 -0.0601236 6.37644 0.180371 6.6303L3.45161 10.0832C3.69201 10.3371 4.08217 10.3369 4.32247 10.0832L12.1354 1.8362C12.3759 1.58237 12.3759 1.17081 12.1354 0.916954Z"
+                                                      fill="#010101" />
+                                                </svg>
+                                             </span>
+                                          </span>
+                                          <span class="filter-dropdown__title">Oko Apartments</span>
+                                       </span>
+                                    </label>
+                                 </li>
+                                 <li class="filter-dropdown__item">
+                                    <label>
+                                       <input type="checkbox" class="filter-dropdown__input">
+                                       <span class="filter-dropdown__checkbox">
+                                          <span class="filter-dropdown__check">
+                                             <span class="filter-dropdown__checked">
+                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none">
+                                                   <path
+                                                      d="M12.1354 0.916954C11.895 0.663099 11.5051 0.663099 11.2646 0.916954L3.88704 8.70443L1.05123 5.71108C0.810761 5.45723 0.42089 5.45725 0.180371 5.71108C-0.0601236 5.96491 -0.0601236 6.37644 0.180371 6.6303L3.45161 10.0832C3.69201 10.3371 4.08217 10.3369 4.32247 10.0832L12.1354 1.8362C12.3759 1.58237 12.3759 1.17081 12.1354 0.916954Z"
+                                                      fill="#010101" />
+                                                </svg>
+                                             </span>
+                                          </span>
+                                          <span class="filter-dropdown__title">Red Side</span>
+                                       </span>
+                                    </label>
+                                 </li>
+                                 <li class="filter-dropdown__item">
+                                    <label>
+                                       <input type="checkbox" class="filter-dropdown__input">
+                                       <span class="filter-dropdown__checkbox">
+                                          <span class="filter-dropdown__check">
+                                             <span class="filter-dropdown__checked">
+                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none">
+                                                   <path
+                                                      d="M12.1354 0.916954C11.895 0.663099 11.5051 0.663099 11.2646 0.916954L3.88704 8.70443L1.05123 5.71108C0.810761 5.45723 0.42089 5.45725 0.180371 5.71108C-0.0601236 5.96491 -0.0601236 6.37644 0.180371 6.6303L3.45161 10.0832C3.69201 10.3371 4.08217 10.3369 4.32247 10.0832L12.1354 1.8362C12.3759 1.58237 12.3759 1.17081 12.1354 0.916954Z"
+                                                      fill="#010101" />
+                                                </svg>
+                                             </span>
+                                          </span>
+                                          <span class="filter-dropdown__title">Малая Бронная, 15</span>
+                                       </span>
+                                    </label>
+                                 </li>
+                                 <li class="filter-dropdown__item">
+                                    <label>
+                                       <input type="checkbox" class="filter-dropdown__input">
+                                       <span class="filter-dropdown__checkbox">
+                                          <span class="filter-dropdown__check">
+                                             <span class="filter-dropdown__checked">
+                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none">
+                                                   <path
+                                                      d="M12.1354 0.916954C11.895 0.663099 11.5051 0.663099 11.2646 0.916954L3.88704 8.70443L1.05123 5.71108C0.810761 5.45723 0.42089 5.45725 0.180371 5.71108C-0.0601236 5.96491 -0.0601236 6.37644 0.180371 6.6303L3.45161 10.0832C3.69201 10.3371 4.08217 10.3369 4.32247 10.0832L12.1354 1.8362C12.3759 1.58237 12.3759 1.17081 12.1354 0.916954Z"
+                                                      fill="#010101" />
+                                                </svg>
+                                             </span>
+                                          </span>
+                                          <span class="filter-dropdown__title">Рахманинов</span>
+                                       </span>
+                                    </label>
+                                 </li>
+                              </ul>
+                              <button class="filter-dropdown__reset icon-close">Сбросить</button>
+
+                           </div>
+                        </li>
+                        </li>
+                        <li class="select-filter__item">
+                           <button class="select-filter__button icon-down-arrow">Кол-во комнат</button>
+                           <div class="select-filter__dropdown filter-dropdown filter-dropdown__rooms">
+                              <ul class="filter-dropdown__list filter-dropdown__list--rooms">
+                                 <li class="filter-dropdown__item">
+                                    <button class="filter-dropdown__room filter-dropdown__room-current">1</button>
+                                 </li>
+                                 <li class="filter-dropdown__item">
+                                    <button class="filter-dropdown__room">2</button>
+                                 </li>
+                                 <li class="filter-dropdown__item">
+                                    <button class="filter-dropdown__room">3</button>
+                                 </li>
+                                 <li class="filter-dropdown__item">
+                                    <button class="filter-dropdown__room">4</button>
+                                 </li>
+                                 <li class="filter-dropdown__item">
+                                    <button class="filter-dropdown__room">5</button>
+                                 </li>
+                                 <li class="filter-dropdown__item">
+                                    <button class="filter-dropdown__room">6+</button>
+                                 </li>
+                                 <li>
+                                    <button class="filter-dropdown__reset icon-close">Сбросить</button>
+                                 </li>
+                              </ul>
+
+
+                           </div>
+                        </li>
+                        <li class="select-filter__item">
+                           <button class="select-filter__button icon-down-arrow">Цена</button>
+
+                        </li>
+                        <li class="select-filter__item">
+                           <button class="select-filter__button icon-down-arrow">Площадь</button>
+
+                        </li>
+                        <li class="select-filter__item">
+                           <button class="select-filter__button icon-down-arrow">Отделка</button>
+
+                           <div class="select-filter__dropdown filter-dropdown ">
+                              <ul class="filter-dropdown__list">
+                                 <li class="filter-dropdown__item">
+                                    <label>
+                                       <input type="checkbox" class="filter-dropdown__input">
+                                       <span class="filter-dropdown__checkbox">
+                                          <span class="filter-dropdown__check">
+                                             <span class="filter-dropdown__checked">
+                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none">
+                                                   <path
+                                                      d="M12.1354 0.916954C11.895 0.663099 11.5051 0.663099 11.2646 0.916954L3.88704 8.70443L1.05123 5.71108C0.810761 5.45723 0.42089 5.45725 0.180371 5.71108C-0.0601236 5.96491 -0.0601236 6.37644 0.180371 6.6303L3.45161 10.0832C3.69201 10.3371 4.08217 10.3369 4.32247 10.0832L12.1354 1.8362C12.3759 1.58237 12.3759 1.17081 12.1354 0.916954Z"
+                                                      fill="#010101" />
+                                                </svg>
+                                             </span>
+                                          </span>
+                                          <span class="filter-dropdown__title">White Box</span>
+                                       </span>
+                                    </label>
+                                 </li>
+                                 <li class="filter-dropdown__item">
+                                    <label>
+                                       <input type="checkbox" class="filter-dropdown__input">
+                                       <span class="filter-dropdown__checkbox">
+                                          <span class="filter-dropdown__check">
+                                             <span class="filter-dropdown__checked">
+                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none">
+                                                   <path
+                                                      d="M12.1354 0.916954C11.895 0.663099 11.5051 0.663099 11.2646 0.916954L3.88704 8.70443L1.05123 5.71108C0.810761 5.45723 0.42089 5.45725 0.180371 5.71108C-0.0601236 5.96491 -0.0601236 6.37644 0.180371 6.6303L3.45161 10.0832C3.69201 10.3371 4.08217 10.3369 4.32247 10.0832L12.1354 1.8362C12.3759 1.58237 12.3759 1.17081 12.1354 0.916954Z"
+                                                      fill="#010101" />
+                                                </svg>
+                                             </span>
+                                          </span>
+                                          <span class="filter-dropdown__title">С отделкой</span>
+                                       </span>
+                                    </label>
+                                 </li>
+                                 <li class="filter-dropdown__item">
+                                    <label>
+                                       <input type="checkbox" class="filter-dropdown__input">
+                                       <span class="filter-dropdown__checkbox">
+                                          <span class="filter-dropdown__check">
+                                             <span class="filter-dropdown__checked">
+                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none">
+                                                   <path
+                                                      d="M12.1354 0.916954C11.895 0.663099 11.5051 0.663099 11.2646 0.916954L3.88704 8.70443L1.05123 5.71108C0.810761 5.45723 0.42089 5.45725 0.180371 5.71108C-0.0601236 5.96491 -0.0601236 6.37644 0.180371 6.6303L3.45161 10.0832C3.69201 10.3371 4.08217 10.3369 4.32247 10.0832L12.1354 1.8362C12.3759 1.58237 12.3759 1.17081 12.1354 0.916954Z"
+                                                      fill="#010101" />
+                                                </svg>
+                                             </span>
+                                          </span>
+                                          <span class="filter-dropdown__title">Без отделки</span>
+                                       </span>
+                                    </label>
+                                 </li>
+                              </ul>
+                              <button class="filter-dropdown__reset icon-close">Сбросить</button>
+                           </div>
+
+
+                        </li>
                      </ul>
                   </div>
                </div>

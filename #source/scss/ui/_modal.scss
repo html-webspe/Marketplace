@@ -30,7 +30,6 @@
       padding: 20px;
       display: none;
       vertical-align: middle;
-      background: rgba(0, 0, 0, 0.4);
       cursor: default;
       text-align: left;
 
@@ -47,7 +46,7 @@
       outline: none;
 
       &:before {
-         color: $acentColor;
+         color: $acentColorLight;
          font-size: 30px;
       }
 

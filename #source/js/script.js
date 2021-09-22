@@ -101,25 +101,45 @@ for (let i = 0; i < links.length; i++) {
 
 
 
-
-
 $('.filter-head__item').click(function () {
    $('.filter-head__item').removeClass('active');
 
    $(this).addClass('active');
 })
 
-
-
-
 $('.result-object__nav--item').click(function () {
 
    $('.result-object__nav--item').removeClass('active');
    $(this).addClass('active');
 
-
-
 })
+
+$('.select-filter__button').click(function () {
+   let sectList = $(this).closest('.select-filter__item');
+   if (!sectList.hasClass('active')) {
+      $('.select-filter__item').removeClass('active')
+      sectList.addClass('active')
+   } else {
+      sectList.removeClass('active')
+   }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const objectFilter = $('.result-object');
 
@@ -168,3 +188,5 @@ const swiper = new Swiper('.swiper-container', {
       prevEl: '.slider-controls__btn-prev',
    },
 });
+
+

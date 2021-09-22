@@ -104,6 +104,9 @@
    }
 
    &__body {
+      position: relative;
+      z-index: 1;
+
       @media (min-width:$md3+px) {
          display: flex;
          flex-wrap: wrap;
@@ -185,41 +188,69 @@
 
 
 .select-filter {
+   border: 1px solid $acentColor;
+   box-shadow: 10px 10px 25px rgba(199, 149, 126, 0.2);
 
    &__list {
-      border: 1px solid $acentColor;
-      box-shadow: 10px 10px 25px rgba(199, 149, 126, 0.2);
-
-
 
       @media (min-width:$md3+px) {
          display: flex;
          justify-content: space-between;
       }
 
-      @media (max-width:1200px) {
-         padding: 24px 42px;
+      @media (max-width:$md3+px) {
+         padding: 42px;
+      }
+
+      @media (min-width:$md3+px) {
+         padding-left: 24px;
+         padding-right: 24px;
       }
 
       @media (min-width:1200px) {
-         padding: 31px 44px;
+         padding-left: 44px;
+         padding-right: 44px;
       }
    }
 
    &__item {
       position: relative;
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-      @include adaptiv-font(20, 18);
 
+      &:last-child {
+         .select-filter__dropdown {
+            left: auto;
+            right: 0;
+         }
+      }
+
+      @media (min-width:$md3+px) {
+   padding: 31px 0;
+}
+   }
+
+   &__button {
+      position: relative;
+      padding-right: 30px;
+      @include adaptiv-font(20, 18);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       line-height: 1.2;
       color: #575757;
       cursor: pointer;
+      z-index: 3;
 
       @media (max-width:$md3+px) {
+         display: flex;
+         align-items: center;
+         flex-direction: row-reverse;
          justify-content: space-between;
          margin-bottom: 21px;
+         width: 100%;
+      }
+
+      @media (min-width:$md3+px) {
+         max-width: 220px;
       }
 
       @media (min-width:$md3+px) and (max-width:$md2+px) {
@@ -228,9 +259,16 @@
 
       &:before {
          color: $acentColorLight;
-         margin-left: 19px;
+
+         @media (min-width:$md3+px) {
+            position: absolute;
+            top: 0;
+            right: 0;
+         }
       }
    }
+
+
 }
 
 .result-object {
@@ -255,6 +293,7 @@
    }
 
    &__nav--item {
+      position: relative;
       display: flex;
       align-items: center;
       color: #575757;
@@ -290,6 +329,12 @@
             color: $acentColor;
          }
 
+      }
+
+      &.icon-list {
+         &:before {
+            font-size: 20px;
+         }
       }
    }
 
