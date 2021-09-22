@@ -898,8 +898,9 @@ input {
   .filter-dropdown__list--rooms li:not(:last-child) {
     margin-right: 20px; }
 
-.filter-dropdown__rooms {
-  min-width: 360px; }
+@media (min-width: 576.98px) {
+  .filter-dropdown__rooms {
+    min-width: 360px; } }
 
 .filter-dropdown__room {
   width: 55px;
@@ -913,8 +914,9 @@ input {
   background: #EFBD9C;
   color: #fff; }
 
-.filter-dropdown__range {
-  min-width: 450px; }
+@media (min-width: 576.98px) {
+  .filter-dropdown__range {
+    min-width: 450px; } }
 
 .filter-dropdown__range-buttons {
   display: -webkit-box;
@@ -942,8 +944,12 @@ input {
 
 .filter-dropdown__item {
   position: relative; }
-  .filter-dropdown__item:not(:last-child) {
-    margin-bottom: 16px; }
+  @media (max-width: 576.98px) {
+    .filter-dropdown__item:not(:last-child) {
+      margin-bottom: 8px; } }
+  @media (min-width: 576.98px) {
+    .filter-dropdown__item:not(:last-child) {
+      margin-bottom: 16px; } }
 
 .filter-dropdown__checkbox {
   display: -webkit-inline-box;
@@ -985,6 +991,10 @@ input {
   line-height: 28px;
   color: #000000;
   cursor: pointer; }
+  @media (max-width: 576.98px) {
+    .filter-dropdown__title {
+      font-size: 16px;
+      line-height: 19px; } }
 
 .filter-dropdown__reset {
   font-size: 19px;
@@ -1542,7 +1552,7 @@ input {
       justify-content: space-between; } }
   @media (max-width: 767.98px) {
     .select-filter__list {
-      padding: 42px; } }
+      padding: 42px 0; } }
   @media (min-width: 767.98px) {
     .select-filter__list {
       padding-left: 24px;
@@ -1556,6 +1566,9 @@ input {
     .select-filter__item-open-right .select-filter__dropdown {
       left: auto;
       right: 0; }
+    @media (max-width: 767.98px) {
+      .select-filter__item {
+        padding: 0 42px; } }
     @media (min-width: 767.98px) {
       .select-filter__item {
         padding: 31px 0; } }

@@ -199,7 +199,7 @@
       }
 
       @media (max-width:$md3+px) {
-         padding: 42px;
+         padding: 42px 0;
       }
 
       @media (min-width:$md3+px) {
@@ -221,6 +221,10 @@
             left: auto;
             right: 0;
          }
+      }
+
+      @media (max-width:$md3+px) {
+         padding: 0 42px;
       }
 
       @media (min-width:$md3+px) {
