@@ -213,17 +213,6 @@ if (rangeSlider2) {
    });
 }
 
-
-
-
-
-
-
-
-
-
-
-
 const objectFilter = $('.result-object');
 
 $('.item-gallery').click(function () {
