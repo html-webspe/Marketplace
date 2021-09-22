@@ -115,9 +115,12 @@ body {
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 @import "ui/_btn";
-@import "blocks/_form";
 @import "ui/_ui";
 @import "ui/_modal";
+@import "ui/_range";
+
+@import "blocks/_form";
+
 @import "blocks/_section";
 @import "blocks/_filter-dropdown";
 

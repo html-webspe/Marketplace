@@ -28,13 +28,19 @@
 
    &__list {
       border-bottom: 1px solid rgba(229, 229, 229, 0.75);
-      padding-bottom: 22px;
-      margin-bottom: 17px;
+
+
+      @media (max-width:$md3+px) {
+         padding-bottom: 22px;
+         margin-bottom: 17px;
+      }
    }
 
    &__list--rooms {
       display: flex;
+      align-items: center;
       flex-wrap: wrap;
+      transition: background 0.3s ease 0;
 
       li {
          &:not(:last-child) {
@@ -54,6 +60,40 @@
       border: 1px solid $acentColorLight;
       font-size: 28px;
       line-height: 34px;
+   }
+
+   &__room-current {
+      background: $acentColorLight;
+      color: #fff;
+   }
+
+   &__range {
+      min-width: 450px;
+   }
+
+   &__range-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+   }
+
+   &__range-button {
+      width: 50px;
+      height: 30px;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      border: 1px solid $acentColorLight;
+      color: $acentColorLight;
+
+      &:not(:last-child) {
+         margin-right: 20px;
+      }
+   }
+
+   &__range-button--current {
+      background: $acentColorLight;
+      color: #fff;
    }
 
    &__item {

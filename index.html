@@ -390,12 +390,78 @@
                         <li class="select-filter__item">
                            <button class="select-filter__button icon-down-arrow">Цена</button>
 
-                        </li>
-                        <li class="select-filter__item">
-                           <button class="select-filter__button icon-down-arrow">Площадь</button>
+                           <div class="select-filter__dropdown filter-dropdown filter-dropdown__range">
+                              <div class="filters__item filters-price">
+                                 <h3 class="filters-price__title">Ценовой диапазон</h3>
+                                 <div class="filters-price__inputs">
+                                    <label class="filters-price__label">
+                                       <input type="number" min="0" max="1000000+" placeholder="0"
+                                          class="filters-price__input" id="input-0">
+                                       <span class="filters-price__text">₽</span>
+                                    </label>
+                                    <label class="filters-price__label">
+                                       <span class="filters-price__text filters-price__text-rang">-</span>
+                                       <input type="number" min="0" max="1000000+" placeholder="1000000+"
+                                          class="filters-price__input" id="input-1">
+                                       <span class="filters-price__text">₽</span>
+                                    </label>
+                                 </div>
+                                 <div class="filters-price__slider" id="range-slider-1">
+                                    <svg viewBox="0 0 372 76" fill="none">
+                                       <path
+                                          d="M166 75.7511C169.244 70.256 178.096 59.7653 187.55 61.7636C197.005 63.7618 202.612 71.9212 204.235 75.7511H208.36C210.831 75.186 213.743 73.5492 216.052 69.7564C220.919 61.7636 223.699 49.7742 228.566 51.7724C233.432 53.7706 230.651 70.2559 235.517 64.7608C240.383 59.2657 236.908 42.2808 242.469 43.2799C248.03 44.279 244.555 59.7652 248.726 64.7608C252.897 69.7564 250.811 23.7972 254.982 23.7972C259.153 23.7972 264.019 21.7989 266.105 30.2914C268.19 38.7838 280.703 31.2905 280.703 23.7972C280.703 16.3039 282.789 -2.67926 288.35 0.318078C293.912 3.31541 289.046 26.7945 293.217 36.7856C297.388 46.7768 291.131 75.7511 360.648 75.7511H208.36C206.665 76.1387 205.177 76.0221 204.235 75.7511H166Z"
+                                          fill="#F7DECD" />
+                                       <path
+                                          d="M175 75.8459C172.244 72.4476 164.724 65.9599 156.693 67.1956C148.661 68.4314 143.897 73.4773 142.519 75.8459H139.015C136.916 75.4964 134.441 74.4841 132.48 72.1386C128.346 67.1956 125.984 59.7812 121.85 61.0169C117.716 62.2526 120.078 72.4475 115.944 69.0492C111.81 65.6509 114.763 55.1471 110.038 55.765C105.314 56.3828 108.267 65.9598 104.723 69.0492C101.18 72.1386 102.952 43.7164 99.4084 43.7164C95.865 43.7164 91.7311 42.4807 89.9594 47.7326C88.1878 52.9845 77.5577 48.3504 77.5577 43.7164C77.5577 39.0824 75.786 27.3428 71.0616 29.1965C66.3371 31.0501 70.471 45.5701 66.9276 51.7488C63.3843 57.9275 68.6993 75.8459 9.64337 75.8459H139.015C140.455 76.0855 141.718 76.0134 142.519 75.8459H175Z"
+                                          fill="#F7DECD" />
+                                    </svg>
+                                 </div>
+
+                              </div>
+
+                              <div class="filter-dropdown__range-buttons">
+                                 <div class="filter-dropdown__range-button filter-dropdown__range-button--current">₽
+                                 </div>
+                                 <div class="filter-dropdown__range-button">$</div>
+                                 <div class="filter-dropdown__range-button">€</div>
+                              </div>
+                           </div>
 
                         </li>
-                        <li class="select-filter__item">
+                        <li class="select-filter__item select-filter__item-open-right">
+                           <button class="select-filter__button icon-down-arrow">Площадь</button>
+                           <div class="select-filter__dropdown filter-dropdown filter-dropdown__range">
+                              <div class="filters__item filters-price">
+                                 <h3 class="filters-price__title">Ценовой диапазон</h3>
+                                 <div class="filters-price__inputs">
+                                    <label class="filters-price__label">
+                                       <input type="number" min="0" max="75000" placeholder="0"
+                                          class="filters-price__input" id="input-2">
+                                       <span class="filters-price__text">кв.м.</span>
+                                    </label>
+                                    <label class="filters-price__label">
+                                       <span class="filters-price__text filters-price__text-rang">-</span>
+                                       <input type="number" min="0" max="75000" placeholder="100+"
+                                          class="filters-price__input" id="input-3">
+                                       <span class="filters-price__text">кв.м.</span>
+                                    </label>
+                                 </div>
+                                 <div class="filters-price__slider" id="range-slider-2">
+                                    <svg viewBox="0 0 372 76" fill="none">
+                                       <path
+                                          d="M166 75.7511C169.244 70.256 178.096 59.7653 187.55 61.7636C197.005 63.7618 202.612 71.9212 204.235 75.7511H208.36C210.831 75.186 213.743 73.5492 216.052 69.7564C220.919 61.7636 223.699 49.7742 228.566 51.7724C233.432 53.7706 230.651 70.2559 235.517 64.7608C240.383 59.2657 236.908 42.2808 242.469 43.2799C248.03 44.279 244.555 59.7652 248.726 64.7608C252.897 69.7564 250.811 23.7972 254.982 23.7972C259.153 23.7972 264.019 21.7989 266.105 30.2914C268.19 38.7838 280.703 31.2905 280.703 23.7972C280.703 16.3039 282.789 -2.67926 288.35 0.318078C293.912 3.31541 289.046 26.7945 293.217 36.7856C297.388 46.7768 291.131 75.7511 360.648 75.7511H208.36C206.665 76.1387 205.177 76.0221 204.235 75.7511H166Z"
+                                          fill="#F7DECD" />
+                                       <path
+                                          d="M175 75.8459C172.244 72.4476 164.724 65.9599 156.693 67.1956C148.661 68.4314 143.897 73.4773 142.519 75.8459H139.015C136.916 75.4964 134.441 74.4841 132.48 72.1386C128.346 67.1956 125.984 59.7812 121.85 61.0169C117.716 62.2526 120.078 72.4475 115.944 69.0492C111.81 65.6509 114.763 55.1471 110.038 55.765C105.314 56.3828 108.267 65.9598 104.723 69.0492C101.18 72.1386 102.952 43.7164 99.4084 43.7164C95.865 43.7164 91.7311 42.4807 89.9594 47.7326C88.1878 52.9845 77.5577 48.3504 77.5577 43.7164C77.5577 39.0824 75.786 27.3428 71.0616 29.1965C66.3371 31.0501 70.471 45.5701 66.9276 51.7488C63.3843 57.9275 68.6993 75.8459 9.64337 75.8459H139.015C140.455 76.0855 141.718 76.0134 142.519 75.8459H175Z"
+                                          fill="#F7DECD" />
+                                    </svg>
+                                 </div>
+
+                              </div>
+                           </div>
+
+                        </li>
+                        <li class="select-filter__item select-filter__item-open-right">
                            <button class="select-filter__button icon-down-arrow">Отделка</button>
 
                            <div class="select-filter__dropdown filter-dropdown ">

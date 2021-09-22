@@ -108,10 +108,17 @@ $('.filter-head__item').click(function () {
 })
 
 $('.result-object__nav--item').click(function () {
-
    $('.result-object__nav--item').removeClass('active');
    $(this).addClass('active');
 
+})
+$('.filter-dropdown__room').click(function () {
+   $('.filter-dropdown__room').removeClass('filter-dropdown__room-current');
+   $(this).addClass('filter-dropdown__room-current');
+})
+$('.filter-dropdown__range-button').click(function () {
+   $('.filter-dropdown__range-button').removeClass('filter-dropdown__range-button--current');
+   $(this).addClass('filter-dropdown__range-button--current');
 })
 
 $('.select-filter__button').click(function () {
@@ -126,9 +133,85 @@ $('.select-filter__button').click(function () {
 
 
 
+const rangeSlider1 = document.getElementById('range-slider-1');
+const rangeSlider2 = document.getElementById('range-slider-2');
 
 
+if (rangeSlider1) {
+   noUiSlider.create(rangeSlider1, {
+      start: [0, 1000000],
+      connect: true,
+      step: 1,
+      range: {
+         'min': [0],
+         'max': [1000000]
+      },
+      handleAttributes: [
+         { 'class': 'ff' },
+         { 'class': 'gg' },
+      ],
+   });
 
+   const input0 = document.getElementById('input-0');
+   const input1 = document.getElementById('input-1');
+   const inputs = [input0, input1];
+
+   rangeSlider1.noUiSlider.on('update', function (values, handle) {
+      inputs[handle].value = Math.round(values[handle]);
+   });
+
+   const setRangeSlider = (i, value) => {
+      let arr = [null, null];
+      arr[i] = value;
+
+      console.log(arr);
+
+      rangeSlider1.noUiSlider.set(arr);
+   };
+
+   inputs.forEach((el, index) => {
+      el.addEventListener('change', (e) => {
+         console.log(index);
+         setRangeSlider(index, e.currentTarget.value);
+      });
+   });
+}
+
+if (rangeSlider2) {
+   noUiSlider.create(rangeSlider2, {
+      start: [0, 100],
+      connect: true,
+      step: 1,
+      range: {
+         'min': [0],
+         'max': [100]
+      },
+      handleAttributes: [
+         { 'class': 'ff' },
+         { 'class': 'gg' },
+      ],
+   });
+
+   const input2 = document.getElementById('input-2');
+   const input3 = document.getElementById('input-3');
+   const inputs1 = [input2, input3];
+
+   rangeSlider2.noUiSlider.on('update', function (values, handle) {
+      inputs1[handle].value = Math.round(values[handle]);
+   });
+
+   const setRangeSlider = (i, value) => {
+      let arr = [null, null];
+      arr[i] = value;
+      rangeSlider2.noUiSlider.set(arr);
+   };
+
+   inputs1.forEach((el, index) => {
+      el.addEventListener('change', (e) => {
+         setRangeSlider(index, e.currentTarget.value);
+      });
+   });
+}
 
 
 
