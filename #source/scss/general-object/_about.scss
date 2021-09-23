@@ -87,7 +87,17 @@
       }
    }
 
-   &__img {}
+   &__img {
+      position: relative;
+   }
+
+   &__icon-img {
+      position: absolute;
+      top: 50%;
+      right: -40%;
+      transform: translateY(-50%);
+      z-index: -1;
+   }
 
    &__info {
       background: #F9F9F9;
@@ -109,7 +119,7 @@
       font-size: 20px;
       line-height: 24px;
 
-      @media (min-width:$md3+px) {
+      @media (min-width:1600px) {
          max-width: 50%;
          padding-right: 50px;
       }

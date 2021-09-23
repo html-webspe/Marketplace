@@ -344,22 +344,25 @@ $(window).scroll(function () {
  
 });
 */
-$(window).scroll(function () {
+$(window).on('load resize', function () {
+   if ($(window).width() > 1266) {
+      $(window).scroll(function () {
 
-   const element = $("#about-animation"),
-      height_el = element.offset().top,
-      element_stop = $(".infrasrtucture");
-
-
-   element.css({
-      top: $(window).scrollTop() + "px",
-      right: '25px',
-      position: "absolute"
-   })
+         const element = $("#about-animation"),
+            height_el = element.offset().top,
+            element_stop = $(".infrasrtucture");
 
 
-
+         element.css({
+            top: $(window).scrollTop() + "px",
+            right: '25px',
+            position: "absolute"
+         })
+      });
+   }
 });
+
+
 
 
 

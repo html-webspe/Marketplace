@@ -3072,6 +3072,18 @@ input::-webkit-inner-spin-button {
   .about__btn {
     width: 450px; } }
 
+.about__img {
+  position: relative; }
+
+.about__icon-img {
+  position: absolute;
+  top: 50%;
+  right: -40%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: -1; }
+
 .about__info {
   background: #F9F9F9; }
   @media (max-width: 1020.98px) {
@@ -3086,7 +3098,7 @@ input::-webkit-inner-spin-button {
 .about__text {
   font-size: 20px;
   line-height: 24px; }
-  @media (min-width: 767.98px) {
+  @media (min-width: 1600px) {
     .about__text {
       max-width: 50%;
       padding-right: 50px; } }
