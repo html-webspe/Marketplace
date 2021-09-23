@@ -110,8 +110,10 @@ body {
 }
 
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
-.text-aling-center{
-  text-align: center;
+@media (min-width:$md3+px) {
+  .text-aling-center {
+    text-align: center;
+  }
 }
 
 .currency-buttons {

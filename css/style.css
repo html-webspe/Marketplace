@@ -203,8 +203,9 @@ body {
   padding-left: 15px;
   padding-right: 15px; }
 
-.text-aling-center {
-  text-align: center; }
+@media (min-width: 767.98px) {
+  .text-aling-center {
+    text-align: center; } }
 
 .currency-buttons {
   display: -webkit-box;
@@ -2992,14 +2993,15 @@ input::-webkit-inner-spin-button {
 .about__container {
   max-width: 1320px; }
 
-.about__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-bottom: 106px; }
+@media (min-width: 767.98px) {
+  .about__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 106px; } }
 
 .about__col {
   display: -webkit-box;
@@ -3012,25 +3014,38 @@ input::-webkit-inner-spin-button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  .about__col:first-child {
+    margin-right: 25px; }
+    @media (max-width: 767.98px) {
+      .about__col:first-child {
+        margin-bottom: 83px; } }
 
 .about__col-info {
   width: 100%; }
 
-.about .pt60 {
-  padding-top: 56px; }
+@media (min-width: 1020.98px) {
+  .about .pt60 {
+    padding-top: 56px; } }
 
 .about__title {
   color: #000;
-  margin-bottom: 67px; }
+  text-align: left; }
   @media (max-width: 767.98px) {
     .about__title {
       font-size: calc(30px + 64.6*((100vw - 320px) / 1920)); } }
   @media (min-width: 767.98px) {
     .about__title {
       font-size: calc(30px + 38*(100vw / 1920)); } }
+  @media (min-width: 1020.98px) {
+    .about__title {
+      margin-bottom: 67px; } }
 
 .about__suptitle {
   margin-bottom: 7px; }
+
+@media (max-width: 1020.98px) {
+  .about__description {
+    margin-bottom: 36px; } }
 
 .about__description-item {
   display: -webkit-box;
@@ -3039,18 +3054,35 @@ input::-webkit-inner-spin-button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #000000;
-  margin-bottom: 30px; }
-  .about__description-item:before {
-    margin-right: 30px;
-    font-size: 40px; }
+  color: #000000; }
+  @media (max-width: 1020.98px) {
+    .about__description-item {
+      margin-bottom: 18px; } }
+  @media (min-width: 1020.98px) {
+    .about__description-item {
+      margin-bottom: 30px; } }
+  @media (max-width: 1020.98px) {
+    .about__description-item:before {
+      margin-right: 17px;
+      font-size: 26px; } }
+  @media (min-width: 1020.98px) {
+    .about__description-item:before {
+      margin-right: 30px;
+      font-size: 40px; } }
 
-.about__btn {
-  width: 450px; }
+@media (min-width: 1020.98px) {
+  .about__btn {
+    width: 450px; } }
 
 .about__info {
-  background: #F9F9F9;
-  padding: 56px 0px 71px 100px; }
+  background: #F9F9F9; }
+  @media (max-width: 1020.98px) {
+    .about__info {
+      padding: 44px 0px 53px 25px; } }
+  @media (min-width: 1020.98px) {
+    .about__info {
+      padding: 56px 0px 71px 100px; } }
 
-.about__text {
-  max-width: 573px; }
+@media (min-width: 767.98px) {
+  .about__text {
+    max-width: 50%; } }
