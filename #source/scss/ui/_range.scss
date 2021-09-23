@@ -14,7 +14,7 @@
 
    &__label {
       .filters-price__input {
-         width: 52px;
+         width: 70px;
       }
    }
 
@@ -46,6 +46,13 @@
    }
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   /* display: none; <- Crashes Chrome on hover */
+   -webkit-appearance: none;
+   margin: 0;
+   /* <-- Apparently some margin are still there even though it's hidden */
+}
 
 .noUi-connect {
    background-color: rgba(177, 164, 212, 0.35);

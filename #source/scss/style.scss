@@ -110,6 +110,10 @@ body {
 }
 
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
+.text-aling-center{
+  text-align: center;
+}
+
 .currency-buttons {
   display: flex;
   justify-content: center;
@@ -124,6 +128,7 @@ body {
   text-align: center;
   border: 1px solid $acentColorLight;
   color: $acentColorLight;
+  cursor: pointer;
 
   &:not(:last-child) {
     margin-right: 20px;
@@ -192,18 +197,18 @@ body {
 @import "blocks/_filter-dropdown";
 
 @import "blocks/_title";
+@import "blocks/_download";
 
 @import "blocks/_header";
 @import "blocks/_home";
 @import "blocks/_object";
 @import "blocks/_infrasrtucture";
-@import "blocks/_download";
+
 @import "blocks/_callback";
 @import "blocks/_experts";
 
-
-
 @import "blocks/_footer";
 
-
 @import "object/_object";
+@import "general-object/_general-object";
+@import "general-object/_about";

@@ -36,6 +36,10 @@
          @media (min-width:$md2+px) {
             padding-bottom: 54px;
          }
+
+         @media (min-width:1200px) {
+            flex: 0 0 510px;
+         }
       }
    }
 
@@ -54,6 +58,7 @@
 
       @media (min-width:1500px) {
          margin-top: 104px;
+         flex: 1;
       }
    }
 

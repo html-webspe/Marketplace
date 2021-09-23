@@ -82,6 +82,13 @@
    -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-height:before {
+   content: "\e910";
+}
+
+.icon-price:before {
+   content: "\e911";
+}
 
 .icon-checked:before {
    content: "\e90f";

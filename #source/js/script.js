@@ -131,7 +131,12 @@ $('.select-filter__button').click(function () {
    }
 })
 
-
+$(document).on('click', function (e) {
+   if (!$(e.target).closest(".select-filter").length) {
+      $('.select-filter__item').removeClass('active')
+   }
+   e.stopPropagation();
+});
 
 const rangeSlider1 = document.getElementById('range-slider-1');
 const rangeSlider2 = document.getElementById('range-slider-2');

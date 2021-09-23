@@ -1,0 +1,66 @@
+.about {
+
+   &__container {
+      max-width: 1320px;
+   }
+
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 106px;
+   }
+
+   &__col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+   }
+
+   &__col-info {
+      width: 100%;
+   }
+
+   .pt60 {
+      padding-top: 56px;
+   }
+
+
+   &__title {
+      @include adaptiv-font(68, 30);
+      color: #000;
+      margin-bottom: 67px;
+   }
+
+   &__suptitle {
+      margin-bottom: 7px;
+   }
+
+
+   &__description-item {
+      display: flex;
+      align-items: center;
+      color: #000000;
+      margin-bottom: 30px;
+
+      &:before {
+         margin-right: 30px;
+         font-size: 40px;
+      }
+   }
+
+   &__btn {
+      width: 450px;
+   }
+
+   &__img {}
+
+   &__info {
+      background: #F9F9F9;
+      padding: 56px 0px 71px 100px;
+   }
+
+   &__text {
+      max-width: 573px;
+   }
+}
