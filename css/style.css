@@ -2560,6 +2560,10 @@ input::-webkit-inner-spin-button {
     margin: 0 auto;
     margin-bottom: 65px; } }
 
+@media (max-width: 576.98px) {
+  .menu-footer {
+    width: auto; } }
+
 .menu-footer__list {
   -webkit-columns: 2;
   columns: 2; }

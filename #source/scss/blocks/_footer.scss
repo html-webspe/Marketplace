@@ -146,6 +146,10 @@
       margin-bottom: 65px;
    }
 
+   @media (max-width:$md4+px) {
+      width: auto;
+   }
+
    &__list {
       columns: 2;
    }
