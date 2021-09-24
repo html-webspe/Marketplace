@@ -1195,7 +1195,7 @@ input::-webkit-inner-spin-button {
       width: 390px; } }
   @media (min-width: 1700px) {
     .download__img {
-      width: auto; } }
+      width: 646px; } }
   .download .download-block {
     padding-top: 40px;
     padding-bottom: 44px; }
@@ -3099,7 +3099,8 @@ input::-webkit-inner-spin-button {
     width: 450px; } }
 
 .about__img {
-  position: relative; }
+  position: relative;
+  max-width: 570px; }
 
 .about__icon-img {
   position: absolute;

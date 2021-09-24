@@ -287,14 +287,17 @@ sliderNavItem.forEach((el, index) => {
    });
 })
 
+var e = $("#about-animation");
+if (e.length > 0) {
+   $(window).on("load resize", function () {
+      1598 < $(window).width() && $(window).scroll(function () {
 
-$(window).on("load resize", function () {
-   1598 < $(window).width() && $(window).scroll(function () {
-      var e = $("#about-animation");
-      e.offset().top, $(".infrasrtucture"), $(window).scrollTop() <= 600 && e.css({
-         top: $(window).scrollTop() + "px",
-         right: "0",
-         position: "absolute"
+         e.offset().top, $(".infrasrtucture"), $(window).scrollTop() <= 600 && e.css({
+            top: $(window).scrollTop() + "px",
+            right: "0",
+            position: "absolute"
+         })
       })
    })
-})
+
+}
