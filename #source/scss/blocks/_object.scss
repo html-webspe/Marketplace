@@ -9,6 +9,7 @@
    &__title {
       color: $acentColor;
       margin-bottom: 51px;
+      text-align: center;
 
       @media (max-width:$md2+px) {
          margin-bottom: 25px;
@@ -125,7 +126,11 @@
       background: #FFFFFF;
       border: 1px solid #E5E5E5;
       cursor: pointer;
-      text-align: center;
+
+      @media (min-width:1200px) {
+         padding: 36px 0px 0px 43px;
+         min-height: 192px;
+      }
 
       &.active {
          position: relative;

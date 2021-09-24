@@ -18,7 +18,7 @@
    @include adaptiv-font(38, 18);
    line-height: 44px;
    color: $acentColor;
-   margin-bottom: 24px;
+   margin-bottom: 10px;
 
    @media (max-width:$md2+px) {
       font-size: 24px;

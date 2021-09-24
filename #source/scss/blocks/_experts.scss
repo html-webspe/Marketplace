@@ -112,15 +112,15 @@
    &__content {
       background: #FFFFFF;
       box-shadow: 10px 10px 25px rgba(229, 229, 229, 0.75);
-      min-height: 378px;
+      min-height: 335px;
       display: flex;
       justify-content: flex-end;
 
       @media (min-width:1200px) {
          width: 100%;
-         padding-right: 96px;
+         padding: 44px 96px 0px 194px;
          margin-left: 275px;
-         padding-left: 194px;
+         margin-top: -8px;
       }
    }
 
