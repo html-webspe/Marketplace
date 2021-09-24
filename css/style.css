@@ -955,7 +955,6 @@ input::-webkit-inner-spin-button {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 315px;
   background-color: #fff;
   padding: 30px;
   -webkit-box-shadow: 4px 4px 12px rgba(229, 229, 229, 0.75);
@@ -966,6 +965,12 @@ input::-webkit-inner-spin-button {
   -o-transition: opacity 0.3s ease 0.2s;
   transition: opacity 0.3s ease 0.2s;
   z-index: 99; }
+  @media (max-width: 767.98px) {
+    .select-filter__dropdown {
+      width: 100%; } }
+  @media (min-width: 767.98px) {
+    .select-filter__dropdown {
+      min-width: 315px; } }
 
 .select-filter__item.active .select-filter__dropdown {
   opacity: 1;
@@ -1670,7 +1675,7 @@ input::-webkit-inner-spin-button {
     flex: 1 1 50%; } }
 
 .filter-head__item {
-  padding: 24px 0;
+  padding: 24px;
   background: #FFFFFF;
   border: 1px solid #E5E5E5;
   cursor: pointer; }
