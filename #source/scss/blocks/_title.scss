@@ -1,7 +1,7 @@
 .title {
    font-family: 'Forum';
-   @include adaptiv-font(68, 32);
-   line-height: 82px;
+   @include adaptiv-font(64, 32);
+   line-height: 71px;
    font-weight: normal;
    letter-spacing: 0.05em;
    text-transform: uppercase;
@@ -12,11 +12,15 @@
       line-height: 42px;
       margin-bottom: 25px;
    }
+
+   span {
+      display: block;
+   }
 }
 
 .suptitle {
-   @include adaptiv-font(38, 18);
-   line-height: 44px;
+   @include adaptiv-font(32, 18);
+   line-height: 39px;
    color: $acentColor;
    margin-bottom: 10px;
 
@@ -30,7 +34,7 @@
 .section__title {
    font-family: 'Forum';
    font-weight: normal;
-   @include adaptiv-font(54, 30);
+   @include adaptiv-font(46, 28);
    line-height: 1.2;
    letter-spacing: 0.05em;
    text-transform: uppercase;

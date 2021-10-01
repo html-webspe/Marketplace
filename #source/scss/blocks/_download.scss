@@ -31,19 +31,18 @@
    }
 
    &__text {
-      @include adaptiv-font(24, 14);
+      @include adaptiv-font(22, 14);
       line-height: 1.2;
       color: #fff;
       margin-bottom: 50px;
-      padding-right: 20px;
 
       @media (max-width:$md3+px) {
          text-align: center;
+         padding-right: 35px;
       }
 
       @media (min-width:$md2+px) {
-         padding-top: 81px;
-         max-width: 539px;
+         max-width: 502px;
       }
    }
 
@@ -75,9 +74,14 @@
          margin: 0 auto;
       }
 
+      @media (min-width:$md3+px) {
+         margin-left: 25px;
+      }
+
       @media (min-width:$md2+px) {
          flex: 0 1 470px;
-         padding: 64px 59px;
+         padding: 50px 70px;
+
       }
    }
 }
@@ -95,7 +99,7 @@
 
 
    @media (min-width:$md2+px) {
-      flex: 0 1 470px;
+      flex: 0 1 490px;
       padding: 64px 59px;
    }
 
@@ -114,7 +118,7 @@
       line-height: 1.2;
       font-weight: 500;
       margin-bottom: 32px;
-      color: #FFFFFF;
+      color: $acentColorLight;
    }
 
    &__text {

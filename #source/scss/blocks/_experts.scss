@@ -8,16 +8,18 @@
 
       @media (max-width:$md3+px) {
          width: 69px;
-         top: 45%;
+         top: 50%;
       }
 
       @media (min-width:$md3+px) {
          top: 108px;
+         width: 135px;
       }
 
       @media (min-width:1600px) {
-         top: 136px;
-         right: 200px;
+         top: 240px;
+         right: 267px;
+
       }
    }
 

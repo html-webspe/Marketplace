@@ -61,7 +61,7 @@ button {
 
 body {
   margin: 0;
-  @include adaptiv-font(24, 14);
+  @include adaptiv-font(20, 14);
   line-height: $lineHeight;
   font-family: $fontfamily;
   font-weight: 400;

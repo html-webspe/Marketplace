@@ -33,17 +33,29 @@
 
    &__container {
       position: relative;
-      max-width: 952px;
+      max-width: 1049px;
       z-index: 1;
    }
 
+   &__body-inner {
+      @media (min-width:$md3+px) {
+         max-width: 873px;
+         margin: 0 auto;
+      }
+   }
+
    &__title {
+      @include adaptiv-font(64, 42);
       margin-bottom: 52px;
    }
 
    &__text {
       text-align: center;
       color: #FFFFFF;
-      margin-bottom: 71px;
+      margin-bottom: 50px;
+
+      @media (min-width:1600px) {
+         padding: 0 100px;
+      }
    }
 }

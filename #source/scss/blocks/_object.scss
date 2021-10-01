@@ -2,8 +2,13 @@
    background: linear-gradient(180deg, #FAFAFA 0%, #FFFFFF 100%);
    padding-top: 87px;
 
+
    @media (max-width:$md2+px) {
       padding-top: 67px;
+   }
+
+   @media (min-width:$md2+px) {
+      padding-bottom: 60px;
    }
 
    &__title {
@@ -64,7 +69,7 @@
       display: flex;
       align-items: center;
       font-weight: normal;
-      @include adaptiv-font(20, 14);
+      @include adaptiv-font(18, 14);
       line-height: 1.2;
       color: $acentColorLight;
 
@@ -85,13 +90,6 @@
       }
    }
 
-   &__body {
-
-
-      @media (min-width:$md2+px) {
-         padding: 0 59px;
-      }
-   }
 }
 
 .filter-head {
@@ -157,7 +155,7 @@
 
       span {
          position: relative;
-         font-family: 'Book-Antiqua';
+         font-family: 'Forum';
          font-weight: normal;
          @include adaptiv-font(56, 30);
          line-height: 1.2;
@@ -168,7 +166,7 @@
 
       p {
          position: relative;
-         font-family: 'Book-Antiqua';
+         font-family: 'Forum';
          @include adaptiv-font(32, 16);
          line-height: 1.2;
          text-transform: uppercase;
@@ -240,7 +238,7 @@
    &__button {
       position: relative;
       padding-right: 30px;
-      @include adaptiv-font(20, 18);
+      @include adaptiv-font(18, 16);
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -285,7 +283,7 @@
    &__head {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 64px;
+      margin-bottom: 48px;
 
       @media (max-width:$md3+px) {
          justify-content: center;
@@ -309,10 +307,12 @@
       transition: color 0.3s ease 0s;
       cursor: pointer;
 
+      &:before {
+         color: $acentColor;
+         font-size: 20px;
+      }
+
       @media (max-width:1200px) {
-         &:not(:last-child) {
-            margin-right: 33px;
-         }
 
          &:before {
             margin-right: 13px;
@@ -321,11 +321,11 @@
 
       @media (min-width:1200px) {
          &:not(:last-child) {
-            margin-right: 63px;
+            margin-right: 28px;
          }
 
          &:before {
-            margin-right: 23px;
+            margin-right: 21px;
          }
       }
 
@@ -342,7 +342,7 @@
 
       &.icon-list {
          &:before {
-            font-size: 20px;
+            font-size: 15px;
          }
       }
    }
@@ -394,24 +394,24 @@
       }
 
       &__img {
-         margin-bottom: 23px;
+         margin-bottom: 13px;
 
       }
 
       &__price {
-         margin-bottom: 22px;
+         margin-bottom: 12px;
+         color: $acentColor;
       }
    }
 }
 
 .item-object {
-   margin-bottom: 67px;
+   margin-bottom: 40px;
    background: #FFFFFF;
 
    @media (max-width:$md3+px) {
       padding: 40px;
       border: 1px solid #EFBD9C;
-      margin-bottom: 40px;
    }
 
    &__img {
@@ -431,22 +431,24 @@
    &__title {
       font-family: 'Forum';
       font-weight: normal;
-      font-size: 30px;
-      line-height: 33px;
+      font-size: 36px;
+      line-height: 40px;
       text-transform: uppercase;
       color: $acentColor;
-      margin-bottom: 18px;
+      margin-bottom: 6px;
    }
 
    &__desc {
-      @include adaptiv-font(24, 16);
+      @include adaptiv-font(20, 16);
       font-weight: 600;
-      margin-bottom: 18px;
+      margin-bottom: 10px;
+      padding-right: 35px;
+
    }
 
    &__list {
       display: flex;
-      margin-bottom: 17px;
+      margin-bottom: 10px;
 
       li {
          display: flex;
@@ -468,7 +470,7 @@
    }
 
    &__location {
-      margin-bottom: 17px;
+      margin-bottom: 8px;
 
       &:before {
          margin-right: 9px;
@@ -480,7 +482,7 @@
       font-weight: 600;
       @include adaptiv-font(36, 18);
       line-height: 44px;
-      color: #010101;
+      color: $acentColor;
    }
 
    &__button {}
@@ -489,7 +491,7 @@
       width: 100%;
 
       &:first-child {
-         margin-bottom: 30px;
+         margin-bottom: 10px;
       }
    }
 

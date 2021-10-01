@@ -31,7 +31,7 @@
       }
 
       @media (min-width:1200px) {
-         flex: 0 1 320px;
+         flex: 0 1 250px;
       }
    }
 
@@ -39,7 +39,7 @@
       display: inline-block;
 
       @media (min-width:1200px) {
-         margin-bottom: 128px;
+         margin-bottom: 105px;
       }
    }
 
@@ -54,8 +54,8 @@
 
    &__social-item {
       display: inline-block;
-      width: 70px;
-      height: 70px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       background-color: $acentColorLight;
       text-align: center;
@@ -69,8 +69,8 @@
       }
 
       &:before {
-         line-height: 70px;
-         font-size: 36px;
+         line-height: 50px;
+         font-size: 20px;
          color: #000;
       }
 
@@ -189,17 +189,17 @@
    &__item {
 
       div {
-         flex: 0 0 70px;
-         width: 70px;
-         height: 70px;
+         flex: 0 0 50px;
+         width: 50px;
+         height: 50px;
          border-radius: 50%;
          background-color: #EFBD9C;
          text-align: center;
          cursor: pointer;
 
          &:before {
-            font-size: 36px;
-            line-height: 70px;
+            font-size: 20px;
+            line-height: 50px;
             color: #fff;
          }
 
