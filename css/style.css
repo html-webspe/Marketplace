@@ -2588,23 +2588,24 @@ input::-webkit-inner-spin-button {
       line-height: 1.2; }
       @media (max-width: 767.98px) {
         .footer__bottom p {
-          font-size: calc(12px + 13.6*((100vw - 320px) / 1920)); } }
+          font-size: calc(12px + 6.8*((100vw - 320px) / 1920)); } }
       @media (min-width: 767.98px) {
         .footer__bottom p {
-          font-size: calc(12px + 8*(100vw / 1920)); } }
+          font-size: calc(12px + 4*(100vw / 1920)); } }
       @media (max-width: 1200px) {
         .footer__bottom p {
           margin-bottom: 23px; } }
     .footer__bottom a {
       -webkit-text-decoration-line: underline;
       text-decoration-line: underline;
-      color: #fff; }
+      color: #fff;
+      line-height: 1.2; }
       @media (max-width: 767.98px) {
         .footer__bottom a {
-          font-size: calc(12px + 13.6*((100vw - 320px) / 1920)); } }
+          font-size: calc(12px + 6.8*((100vw - 320px) / 1920)); } }
       @media (min-width: 767.98px) {
         .footer__bottom a {
-          font-size: calc(12px + 8*(100vw / 1920)); } }
+          font-size: calc(12px + 4*(100vw / 1920)); } }
 
 @media (min-width: 1200px) {
   .menu-footer {

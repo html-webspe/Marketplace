@@ -116,7 +116,7 @@
 
       p {
          color: $acentColorLight;
-         @include adaptiv-font(20, 12);
+         @include adaptiv-font(16, 12);
          line-height: 1.2;
 
          @media (max-width:1200px) {
@@ -127,9 +127,8 @@
       a {
          text-decoration-line: underline;
          color: #fff;
-         @include adaptiv-font(20, 12);
-
-         @media (max-width:1200px) {}
+         @include adaptiv-font(16, 12);
+         line-height: 1.2;
       }
    }
 }
