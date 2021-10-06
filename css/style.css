@@ -298,7 +298,7 @@ body {
       max-width: 350px; } }
   @media (min-width: 1199.98px) {
     .btn {
-      font-size: 20px;
+      font-size: 18px;
       padding: 20px 0px; } }
   .btn:hover {
     background-color: #C7957E; }
@@ -2117,9 +2117,6 @@ input::-webkit-inner-spin-button {
       padding: 0 10px 10px 10px; } }
   .item-object__btn:first-child {
     margin-bottom: 10px; }
-  @media (min-width: 1199.98px) {
-    .item-object__btn {
-      font-size: 18px; } }
   .item-object__btn--transparent {
     border: 2px solid #C7957E;
     background-color: transparent; }
