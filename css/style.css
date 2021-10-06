@@ -1986,13 +1986,25 @@ input::-webkit-inner-spin-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; } }
 
-@media (min-width: 767.98px) {
+@media (min-width: 1500px) {
+  .result-object__gallery .result-object__body {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; } }
+
+@media (min-width: 1020.98px) {
+  .result-object__gallery .item-object {
+    width: 27.5%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 27.5%;
+    flex: 0 1 27.5%; } }
+
+@media (min-width: 1500px) {
   .result-object__gallery .item-object {
     width: 31.5%;
     -webkit-box-flex: 0;
@@ -2022,7 +2034,7 @@ input::-webkit-inner-spin-button {
     width: 100%;
     height: 176px;
     margin-bottom: 16px; }
-    @media (min-width: 1020.98px) {
+    @media (min-width: 1500px) {
       .item-object__img {
         height: 252px; } }
     .item-object__img img {
@@ -2041,7 +2053,7 @@ input::-webkit-inner-spin-button {
     text-transform: uppercase; }
     @media (min-width: 1199.98px) {
       .item-object__title {
-        font-size: 36px;
+        font-size: 32px;
         margin-bottom: 6px; } }
   .item-object__desc {
     font-weight: 600;
@@ -2049,7 +2061,7 @@ input::-webkit-inner-spin-button {
     line-height: 1.2;
     color: #000000;
     margin-bottom: 15px; }
-    @media (min-width: 1199.98px) {
+    @media (min-width: 1500px) {
       .item-object__desc {
         font-size: 20px;
         margin-bottom: 10px; } }
@@ -2084,7 +2096,7 @@ input::-webkit-inner-spin-button {
         margin: 0 7px; }
   .item-object__location {
     margin-bottom: 8px; }
-    @media (min-width: 1199.98px) {
+    @media (min-width: 1500px) {
       .item-object__location {
         font-size: 20px; } }
     .item-object__location:before {
@@ -2096,7 +2108,7 @@ input::-webkit-inner-spin-button {
     line-height: 1.2;
     color: #C7957E;
     margin-bottom: 16px; }
-    @media (min-width: 1199.98px) {
+    @media (min-width: 1500px) {
       .item-object__price {
         font-size: 32px;
         margin-bottom: 12px; } }
@@ -2105,6 +2117,9 @@ input::-webkit-inner-spin-button {
       padding: 0 10px 10px 10px; } }
   .item-object__btn:first-child {
     margin-bottom: 10px; }
+  @media (min-width: 1199.98px) {
+    .item-object__btn {
+      font-size: 18px; } }
   .item-object__btn--transparent {
     border: 2px solid #C7957E;
     background-color: transparent; }

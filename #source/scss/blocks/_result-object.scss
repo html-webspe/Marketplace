@@ -103,13 +103,22 @@
    .result-object__body {
       @media (min-width:$md3+px) {
          display: flex;
-         justify-content: space-between;
+         justify-content: space-around;
          flex-wrap: wrap;
+      }
+
+      @media (min-width:1500px) {
+         justify-content: space-between;
       }
    }
 
    .item-object {
-      @media (min-width:$md3+px) {
+      @media (min-width:$md2+px) {
+         width: 27.5%;
+         flex: 0 1 27.5%;
+      }
+
+      @media (min-width:1500px) {
          width: 31.5%;
          flex: 0 1 31.5%;
       }
@@ -148,7 +157,7 @@
       height: 176px;
       margin-bottom: 16px;
 
-      @media (min-width:$md2+px) {
+      @media (min-width:1500px) {
          height: 252px;
       }
 
@@ -171,7 +180,7 @@
       text-transform: uppercase;
 
       @media (min-width:$md1+px) {
-         font-size: 36px;
+         font-size: 32px;
          margin-bottom: 6px;
       }
    }
@@ -183,7 +192,7 @@
       color: #000000;
       margin-bottom: 15px;
 
-      @media (min-width:$md1+px) {
+      @media (min-width:1500px) {
          font-size: 20px;
          margin-bottom: 10px;
       }
@@ -217,7 +226,7 @@
    &__location {
       margin-bottom: 8px;
 
-      @media (min-width:$md1+px) {
+      @media (min-width:1500px) {
          font-size: 20px;
       }
 
@@ -234,7 +243,7 @@
       color: $acentColor;
       margin-bottom: 16px;
 
-      @media (min-width:$md1+px) {
+      @media (min-width:1500px) {
          font-size: 32px;
          margin-bottom: 12px;
       }
@@ -249,6 +258,10 @@
    &__btn {
       &:first-child {
          margin-bottom: 10px;
+      }
+
+      @media (min-width:$md1+px) {
+         font-size: 18px;
       }
    }
 
