@@ -403,33 +403,40 @@ input {
   .modal__content {
     background: #FFFFFF;
     border: 5px solid #EFBD9C;
-    padding: 43px; }
+    padding: 33px;
+    text-align: center; }
     @media (max-width: 767.98px) {
       .modal__content {
-        padding: 15px; } }
+        padding: 28px 15px 15px 15px; } }
   .modal__title {
     font-weight: 600;
     line-height: 1.2;
     color: #C7957E;
-    margin-bottom: 27px;
+    margin-bottom: 22px;
     text-align: center; }
     @media (max-width: 767.98px) {
       .modal__title {
-        font-size: calc(24px + 22.1*((100vw - 320px) / 1920)); } }
+        font-size: calc(18px + 17*((100vw - 320px) / 1920)); } }
     @media (min-width: 767.98px) {
       .modal__title {
-        font-size: calc(24px + 13*(100vw / 1920)); } }
+        font-size: calc(18px + 10*(100vw / 1920)); } }
+    @media (max-width: 767.98px) {
+      .modal__title {
+        margin-bottom: 18px; } }
   .modal__text {
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: #000000;
-    margin-bottom: 44px; }
+    margin-bottom: 28px; }
     @media (max-width: 767.98px) {
       .modal__text {
         font-size: calc(16px + 10.2*((100vw - 320px) / 1920)); } }
     @media (min-width: 767.98px) {
       .modal__text {
         font-size: calc(16px + 6*(100vw / 1920)); } }
+    @media (max-width: 767.98px) {
+      .modal__text {
+        margin-bottom: 18px; } }
   .modal__form {
     max-width: 430px;
     margin: 0 auto;
@@ -439,14 +446,19 @@ input {
     border: none;
     border-bottom: 1px solid #000;
     background: transparent;
-    padding-bottom: 18px;
+    padding-bottom: 14px;
     padding-left: 46px;
     color: #000;
     -webkit-transition: border 0.3s ease 0s;
     -o-transition: border 0.3s ease 0s;
     transition: border 0.3s ease 0s;
-    margin-bottom: 51px;
+    margin-bottom: 31px;
     width: 100%; }
+    @media (max-width: 767.98px) {
+      .modal__form-input {
+        margin-bottom: 24px;
+        padding-bottom: 10px;
+        padding-left: 7px; } }
     .modal__form-input:focus {
       border-bottom: 1px solid #C7957E; }
   .modal__form-btn {

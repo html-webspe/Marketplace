@@ -72,20 +72,25 @@
    &__content {
       background: #FFFFFF;
       border: 5px solid #EFBD9C;
-      padding: 43px;
+      padding: 33px;
+      text-align: center;
 
       @media (max-width:$md3+px) {
-         padding: 15px;
+         padding: 28px 15px 15px 15px;
       }
    }
 
    &__title {
       font-weight: 600;
-      @include adaptiv-font(37, 24);
+      @include adaptiv-font(28, 18);
       line-height: 1.2;
       color: $acentColor;
-      margin-bottom: 27px;
+      margin-bottom: 22px;
       text-align: center;
+
+      @media (max-width:$md3+px) {
+         margin-bottom: 18px;
+      }
    }
 
    &__text {
@@ -93,7 +98,11 @@
       line-height: 1.2;
       letter-spacing: 0.03em;
       color: #000000;
-      margin-bottom: 44px;
+      margin-bottom: 28px;
+
+      @media (max-width:$md3+px) {
+         margin-bottom: 18px;
+      }
    }
 
    &__form {
@@ -107,12 +116,18 @@
       border: none;
       border-bottom: 1px solid #000;
       background: transparent;
-      padding-bottom: 18px;
+      padding-bottom: 14px;
       padding-left: 46px;
       color: #000;
       transition: border 0.3s ease 0s;
-      margin-bottom: 51px;
+      margin-bottom: 31px;
       width: 100%;
+
+      @media (max-width:$md3+px) {
+         margin-bottom: 24px;
+         padding-bottom: 10px;
+         padding-left: 7px;
+      }
 
       &:focus {
          border-bottom: 1px solid $acentColor;
