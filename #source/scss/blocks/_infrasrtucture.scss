@@ -70,8 +70,7 @@
 
    &__tab {
       position: relative;
-      @include adaptiv-font(20, 20);
-      line-height: 24px;
+      font-size: 20px;
       color: #000000;
       transition: 0.3s;
       cursor: pointer;
@@ -186,8 +185,7 @@
    }
 
    &__col {
-      font-size: 16px;
-      line-height: 20px;
+      font-size: 14px;
       color: #000;
       cursor: pointer;
 
@@ -197,6 +195,10 @@
          &:last-child {
             display: none;
          }
+      }
+
+      @media (min-width:1600px) {
+         font-size: 16px;
       }
 
       @media (min-width:$md3+px) {

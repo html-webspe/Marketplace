@@ -36,7 +36,7 @@
 		for (let index = 0; index < da_elements_array.length; index++) {
 			const el = da_elements_array[index];
 			const da_breakpoint = el.breakpoint;
-			const da_type = "max"; //Для MobileFirst поменять на min
+			const da_type = "min"; //Для MobileFirst поменять на min
 
 			da_match_media.push(window.matchMedia("(" + da_type + "-width: " + da_breakpoint + "px)"));
 			da_match_media[index].addListener(dynamic_adapt);

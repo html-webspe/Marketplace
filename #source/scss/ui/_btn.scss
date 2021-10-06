@@ -4,25 +4,24 @@
    display: inline-flex;
    justify-content: center;
    align-items: center;
-   padding: 20px 0px;
-   width: 349px;
    background-color: $acentColorLight;
    text-align: center;
    font-weight: 600;
-   font-size: 22px;
-   line-height: 27px;
+   font-size: 14px;
+   line-height: 1.2;
+   padding-top: 18px;
+   padding-bottom: 18px;
    color: #000;
    transition: background 0.3s ease 0s;
+   width: 100%;
 
-   @media (max-width:$md2+px) {
-      font-size: 14px;
-      line-height: 17px;
-      padding-top: 18px;
-      padding-bottom: 18px;
+   @media (min-width:$md4+px) {
+      max-width: 350px;
    }
 
-   @media (max-width:$md4+px) {
-      width: 100%;
+   @media (min-width:$md1+px) {
+      font-size: 20px;
+      padding: 20px 0px;
    }
 
    &:hover {

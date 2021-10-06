@@ -1,0 +1,53 @@
+.s-object {
+   background: linear-gradient(180deg, #FAFAFA 0%, #FFFFFF 100%);
+   padding-top: 67px;
+
+   @media (min-width:$md2+px) {
+      padding-bottom: 60px;
+      padding-top: 87px;
+   }
+}
+
+.object {
+   &__decor-top {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40%;
+
+      @media (min-width:$md3+px) {
+         width: 15%;
+      }
+
+      @media (min-width:1400px) {
+         width: 25%;
+
+      }
+   }
+
+   &__decor-bottom {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: rotate(180deg);
+      width: 40%;
+
+      @media (min-width:$md3+px) {
+         width: 15%;
+      }
+
+      @media (min-width:1400px) {
+         width: 25%;
+      }
+   }
+
+   &__decor-logo {
+      position: absolute;
+      bottom: 85px;
+      left: 85px;
+
+      @media (max-width:$md2+px) {
+         display: none;
+      }
+   }
+}

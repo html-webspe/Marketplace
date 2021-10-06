@@ -61,11 +61,15 @@ button {
 
 body {
   margin: 0;
-  @include adaptiv-font(20, 14);
-  line-height: $lineHeight;
+  font-size: $fontSize;
   font-family: $fontfamily;
-  font-weight: 400;
+  line-height: 1.4;
+  font-weight: 500;
   color: $acentColorDarck;
+
+  @media (min-width:$md1+px) {
+    font-size: 20px;
+  }
 }
 
 //<ОБОЛОЧКА>===========================================================================================================
@@ -195,15 +199,24 @@ body {
 
 @import "blocks/_form";
 
-@import "blocks/_section";
 @import "blocks/_filter-dropdown";
 
 @import "blocks/_title";
 @import "blocks/_download";
 
-@import "blocks/_header";
-@import "blocks/_home";
-@import "blocks/_object";
+@import "blocks/_header-copy";
+@import "blocks/_home-copy";
+
+/*   OBGECT   */
+@import "blocks/_object-copy";
+@import "blocks/_filter-head";
+@import "blocks/_select-filter";
+@import "blocks/_result-object";
+
+
+/*   OBGECT   */
+
+
 @import "blocks/_infrasrtucture";
 
 @import "blocks/_callback";

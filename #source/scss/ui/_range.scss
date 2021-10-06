@@ -2,9 +2,14 @@
 
    &__title {
       font-size: 19px;
-      line-height: 23px;
+      line-height: 1.2;
       margin-bottom: 10px;
       text-align: center;
+
+      @media (max-width:$md3+px) {
+         font-size: 14px;
+         margin-bottom: 24px;
+      }
    }
 
    &__inputs {
