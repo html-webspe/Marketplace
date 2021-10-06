@@ -145,8 +145,12 @@
       border: 1px solid #EFBD9C;
    }
 
+   @media (min-width:$md3+px) {
+      border: 1px solid #F0F0F0;
+   }
+
    &__content {
-      @media (min-width:1200px) {
+      @media (min-width:$md3+px) {
          padding: 0 10px;
       }
    }
@@ -250,7 +254,7 @@
    }
 
    &__button {
-      @media (min-width:1200px) {
+      @media (min-width:$md3+px) {
          padding: 0 10px 10px 10px;
       }
    }

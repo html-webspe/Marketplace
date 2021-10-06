@@ -1528,6 +1528,12 @@ input::-webkit-inner-spin-button {
   @media (max-width: 767.98px) {
     .home__body {
       text-align: center; } }
+  @media (min-width: 576.98px) and (max-width: 1020.98px) {
+    .home__body {
+      background-image: url(../img/home/home-map.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; } }
   @media (min-width: 767.98px) {
     .home__body {
       display: -webkit-box;
@@ -1572,7 +1578,7 @@ input::-webkit-inner-spin-button {
   text-align: center; }
   @media (max-width: 1020.98px) {
     .action {
-      height: 350px;
+      height: 364px;
       margin: 0 auto; } }
   @media (min-width: 767.98px) {
     .action {
@@ -2026,7 +2032,10 @@ input::-webkit-inner-spin-button {
     .item-object {
       padding: 40px;
       border: 1px solid #EFBD9C; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 767.98px) {
+    .item-object {
+      border: 1px solid #F0F0F0; } }
+  @media (min-width: 767.98px) {
     .item-object__content {
       padding: 0 10px; } }
   .item-object__img {
@@ -2112,7 +2121,7 @@ input::-webkit-inner-spin-button {
       .item-object__price {
         font-size: 32px;
         margin-bottom: 12px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 767.98px) {
     .item-object__button {
       padding: 0 10px 10px 10px; } }
   .item-object__btn:first-child {

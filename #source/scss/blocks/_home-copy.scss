@@ -20,6 +20,15 @@
 
       @media (max-width:$md3+px) {
          text-align: center;
+
+
+      }
+
+      @media (min-width:$md4+px) and (max-width:$md2+px) {
+         background-image: url(../img/home/home-map.png);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
       }
 
       @media (min-width:$md3+px) {
@@ -28,6 +37,7 @@
          padding-left: 30px;
          padding-right: 30px;
          padding-top: 75px;
+
       }
 
       @media (min-width:1500px) {
@@ -76,7 +86,7 @@
    text-align: center;
 
    @media (max-width:$md2+px) {
-      height: 350px;
+      height: 364px;
       margin: 0 auto;
    }
 
