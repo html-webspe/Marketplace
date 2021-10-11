@@ -75,19 +75,15 @@
    border: 0.663677px solid rgba(239, 189, 156, 0.5);
    outline: 3.31839px solid $acentColorLight;
    outline-offset: -10px;
-   padding: 0 33px;
+   padding: 0 33px 33px 33px;
    text-align: center;
 
    @media (max-width:$md2+px) {
-      height: 364px;
       margin: 0 auto;
    }
 
    @media (min-width:$md3+px) and (max-width:$md2+px) {
       width: 290px;
-      padding: 0 25px;
-      height: 320px;
-
    }
 
    @media (min-width:$md3+px) {
@@ -101,33 +97,21 @@
 
    @media (min-width:1600px) {
       margin-top: 104px;
-      max-width: 490px;
-      padding: 0 59px;
-   }
-
-
-   &__block {
-      position: relative;
-      top: -82px;
-
-      @media (min-width:$md2+px) {
-         top: -44px;
-      }
-
-      @media (min-width:1600px) {
-         top: -102px;
-      }
+      max-width: 470px;
+      padding: 59px;
    }
 
    &__block-img {
+      position: relative;
       margin-bottom: 6px;
+      margin-top: -73px;
+      z-index: 2;
 
       @media (min-width:1600px) {
          margin-bottom: 30px;
+         margin-top: -166px;
       }
-
    }
-
 
    &__block-text {
       font-size: 14px;
