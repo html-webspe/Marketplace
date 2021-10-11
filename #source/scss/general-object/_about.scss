@@ -10,6 +10,7 @@
 
       @media (min-width:$md2+px) {
          padding: 0;
+         position: relative;
       }
 
       @media (min-width:$md2+px) and (max-width:1200px) {
@@ -103,14 +104,18 @@
    }
 
    &__img {
-      position: relative;
-      max-width: 360px;
-      margin: 0 auto;
-
       @media (max-width:$md3+px) {
          margin-bottom: 70px;
       }
 
+      @media (max-width:$md2+px) {
+         position: relative;
+         max-width: 360px;
+         margin: 0 auto;
+      }
+   }
+
+   &__img-big {
       @media (min-width:$md2+px) {
          display: none;
       }
@@ -122,6 +127,11 @@
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: -1;
+
+      @media (min-width:1200px) {
+         left: 100%;
+         top: 50%;
+      }
    }
 
    &__col-info {
