@@ -65,15 +65,16 @@
          top: -126px;
       }
 
-      @media (min-width:$md3+px) {
-         position: absolute;
-         bottom: -53px;
-         left: 0;
-         width: 298px;
+      @media (min-width:$md3+px) and (max-width:1400px) {
+         display: none;
       }
 
       @media (min-width:1400px) {
-         width: 486px;
+         position: absolute;
+         bottom: -53px;
+         left: 0;
+         width: 430px;
+         z-index: 2;
       }
 
       @media (min-width:1700px) {
@@ -137,6 +138,14 @@
 
       @media (max-width:$md3+px) {
          font-size: 14px;
+      }
+
+      @media (min-width:$md3+px) {
+         font-size: 18px;
+      }
+
+      @media (min-width:1200px) {
+         font-size: 22px;
       }
    }
 

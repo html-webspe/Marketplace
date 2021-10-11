@@ -113,8 +113,7 @@ $('.result-object__nav--item').click(function () {
 
 })
 $('.filter-dropdown__room').click(function () {
-   $('.filter-dropdown__room').removeClass('filter-dropdown__room-current');
-   $(this).addClass('filter-dropdown__room-current');
+   $(this).toggleClass('filter-dropdown__room-current');
 })
 $('.currency-button').click(function () {
    $('.currency-button').removeClass('currency-button__current');
@@ -290,7 +289,7 @@ sliderNavItem.forEach((el, index) => {
 var e = $("#about-animation");
 if (e.length > 0) {
    $(window).on("load resize", function () {
-      1598 < $(window).width() && $(window).scroll(function () {
+      1200 < $(window).width() && $(window).scroll(function () {
 
          e.offset().top, $(".infrasrtucture"), $(window).scrollTop() <= 600 && e.css({
             top: $(window).scrollTop() + "px",
@@ -299,5 +298,24 @@ if (e.length > 0) {
          })
       })
    })
-
 }
+
+
+
+const aboutSliderNav = new Swiper('.about-slider__nav--container', {
+   slidesPerView: 3,
+   spaceBetween: 20,
+   navigation: {
+      nextEl: '.slider-controls__btn-next',
+      prevEl: '.slider-controls__btn-prev',
+   },
+   freeMode: true,
+   watchSlidesProgress: true,
+});
+
+const aboutSliderMain = new Swiper('.about-slider__main--container', {
+   slidesPerView: 1,
+   thumbs: {
+      swiper: aboutSliderNav,
+   },
+});

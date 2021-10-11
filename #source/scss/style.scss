@@ -111,6 +111,12 @@ body {
   width: 100%;
   padding-left: $containerPadding;
   padding-right: $containerPadding;
+  position: relative;
+
+
+  &-xl {
+    max-width: 1187px;
+  }
 }
 
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
@@ -151,7 +157,6 @@ body {
   margin: 27px 0px 65px 0px;
 
   @media (min-width:1600px) {
-    padding-left: 184px;
     margin: 46px 0px 100px 0px;
 
   }

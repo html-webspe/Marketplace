@@ -9,6 +9,10 @@
       }
    }
 
+   .crumbs {
+      padding: 0;
+      margin-bottom: 29px;
+   }
 
    .table-head__group {
       display: flex;
@@ -46,6 +50,15 @@
          }
       }
    }
+
+   .infrasrtucture {
+      margin-bottom: 60px;
+
+      @media (min-width:$md2+px) {
+         margin-bottom: 83px;
+      }
+   }
+
 
    .infrasrtucture__ating {
       display: inline-block;
