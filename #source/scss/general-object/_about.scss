@@ -223,6 +223,7 @@
       .swiper-slide {
          position: relative;
          height: 55px;
+         cursor: pointer;
 
          @media (min-width:$md2+px) {
             height: 110px;

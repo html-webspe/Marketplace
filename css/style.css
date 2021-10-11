@@ -3370,7 +3370,8 @@ input::-webkit-inner-spin-button {
 
 .about-slider__nav .swiper-slide {
   position: relative;
-  height: 55px; }
+  height: 55px;
+  cursor: pointer; }
   @media (min-width: 1020.98px) {
     .about-slider__nav .swiper-slide {
       height: 110px; } }
