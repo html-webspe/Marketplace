@@ -1579,9 +1579,10 @@ input::-webkit-inner-spin-button {
 .home__map {
   margin-top: -44px;
   z-index: -1; }
-  @media (max-width: 1020.98px) and (max-width: 1500px) {
+  @media (min-width: 1020.98px) and (max-width: 1500px) {
     .home__map {
-      height: 406px; } }
+      height: 406px;
+      width: 720px; } }
   @media (max-width: 1020.98px) {
     .home__map {
       display: none; } }

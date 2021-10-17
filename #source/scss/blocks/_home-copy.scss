@@ -54,8 +54,9 @@
       z-index: -1;
 
 
-      @media (max-width:$md2+px) and (max-width:1500px) {
+      @media (min-width:$md2+px) and (max-width:1500px) {
          height: 406px;
+         width: 720px;
       }
 
       @media (max-width:$md2+px) {
