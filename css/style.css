@@ -1581,7 +1581,7 @@ input::-webkit-inner-spin-button {
   z-index: -1; }
   @media (min-width: 1020.98px) and (max-width: 1500px) {
     .home__map {
-      width: 720px; } }
+      max-width: 720px; } }
   @media (max-width: 1020.98px) {
     .home__map {
       display: none; } }
