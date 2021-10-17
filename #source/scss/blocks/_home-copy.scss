@@ -71,6 +71,7 @@
 
 .action {
    max-width: 330px;
+   flex: 0 0 330px;
    background: rgba(255, 255, 255, 0.85);
    border: 0.663677px solid rgba(239, 189, 156, 0.5);
    outline: 3.31839px solid $acentColorLight;
@@ -98,6 +99,7 @@
    @media (min-width:1600px) {
       margin-top: 104px;
       max-width: 470px;
+      flex: 0 1 470px;
       padding: 59px;
    }
 
