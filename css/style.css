@@ -1579,10 +1579,10 @@ input::-webkit-inner-spin-button {
 .home__map {
   margin-top: -44px;
   z-index: -1; }
-  @media (min-width: 1300px) and (max-width: 1500px) {
+  @media (min-width: 1020.98px) and (max-width: 1500px) {
     .home__map {
-      width: 805px; } }
-  @media (max-width: 1300px) {
+      width: 720px; } }
+  @media (max-width: 1020.98px) {
     .home__map {
       display: none; } }
   .home__map img {
@@ -1599,10 +1599,10 @@ input::-webkit-inner-spin-button {
   outline-offset: -10px;
   padding: 0 33px 33px 33px;
   text-align: center; }
-  @media (max-width: 1300px) {
+  @media (max-width: 1020.98px) {
     .action {
       margin: 0 auto; } }
-  @media (min-width: 767.98px) and (max-width: 1300px) {
+  @media (min-width: 767.98px) and (max-width: 1020.98px) {
     .action {
       width: 290px; } }
   @media (min-width: 767.98px) {
