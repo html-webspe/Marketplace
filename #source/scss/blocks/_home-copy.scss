@@ -54,11 +54,11 @@
       z-index: -1;
 
 
-      @media (min-width:$md2+px) and (max-width:1500px) {
-         width: 790px;
+      @media (min-width:1300px) and (max-width:1500px) {
+         width: 805px;
       }
 
-      @media (max-width:$md2+px) {
+      @media (max-width:1300px) {
          display: none;
       }
 
@@ -79,11 +79,11 @@
    padding: 0 33px 33px 33px;
    text-align: center;
 
-   @media (max-width:$md2+px) {
+   @media (max-width:1300px) {
       margin: 0 auto;
    }
 
-   @media (min-width:$md3+px) and (max-width:$md2+px) {
+   @media (min-width:$md3+px) and (max-width:1300px) {
       width: 290px;
    }
 
