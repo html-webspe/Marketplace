@@ -227,17 +227,29 @@ $('.item-list').click(function () {
    objectFilter.removeClass('result-object__gallery');
    objectFilter.addClass('result-object__list');
 })
+const parent = document.getElementById("foo");
 
 
 
 const tabsBtn = document.querySelectorAll('.infrasrtucture__tab');
 const tabsItem = document.querySelectorAll('.infrasrtucture__tab-item');
+const infrasrtucturMap = document.getElementById('infrasrtucture-map');
+
 
 tabsBtn.forEach((item) => {
    item.addEventListener("click", () => {
-      let currentBtn = item;
-      let tabId = currentBtn.getAttribute('data-tab');
-      let currentTab = document.querySelector(tabId);
+      let currentBtn = item,
+         tabId = currentBtn.getAttribute('data-tab'),
+         blockClass = tabId.replace('#tab_', ""),
+         currentTab = document.querySelector(tabId),
+         block = document.createElement('div');
+      block.className = "infrasrtucture__map map-" + blockClass;
+
+
+      while (infrasrtucturMap.firstChild) {
+         infrasrtucturMap.firstChild.remove();
+      }
+      infrasrtucturMap.appendChild(block);
 
       tabsBtn.forEach((item) => {
          item.classList.remove('active');
