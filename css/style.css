@@ -2099,6 +2099,10 @@ input::-webkit-inner-spin-button {
   margin-bottom: 12px;
   color: #C7957E; }
 
+@media (min-width: 576.98px) {
+  .result-object__gallery .item-object__desc {
+    max-width: 70%; } }
+
 .item-object {
   margin-bottom: 40px;
   background: #FFFFFF; }
@@ -2144,9 +2148,6 @@ input::-webkit-inner-spin-button {
     line-height: 1.2;
     color: #000000;
     margin-bottom: 15px; }
-    @media (min-width: 576.98px) {
-      .item-object__desc {
-        max-width: 70%; } }
     @media (min-width: 1500px) {
       .item-object__desc {
         font-size: 20px;
