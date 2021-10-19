@@ -231,9 +231,11 @@ const parent = document.getElementById("foo");
 
 
 
-const tabsBtn = document.querySelectorAll('.infrasrtucture__tab');
-const tabsItem = document.querySelectorAll('.infrasrtucture__tab-item');
-const infrasrtucturMap = document.getElementById('infrasrtucture-map');
+const tabsBtn = document.querySelectorAll('.infrasrtucture__tab'),
+   tabsItem = document.querySelectorAll('.infrasrtucture__tab-item'),
+   infrasrtucturMap = document.getElementById('infrasrtucture-map'),
+   mainPage = document.querySelector('main-page');
+
 
 
 tabsBtn.forEach((item) => {
@@ -245,11 +247,11 @@ tabsBtn.forEach((item) => {
          block = document.createElement('div');
       block.className = "infrasrtucture__map map-" + blockClass;
 
-
       while (infrasrtucturMap.firstChild) {
          infrasrtucturMap.firstChild.remove();
       }
       infrasrtucturMap.appendChild(block);
+
 
       tabsBtn.forEach((item) => {
          item.classList.remove('active');
