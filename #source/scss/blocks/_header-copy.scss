@@ -218,9 +218,7 @@
    }
 
    &__link {
-      @media (max-width:$md2+px) {
-         color: #575757;
-      }
+      color: #575757;
 
       @media (min-width:$md2+px) {
          font-size: 14px;
