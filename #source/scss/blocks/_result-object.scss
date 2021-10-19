@@ -101,7 +101,7 @@
 
 .result-object__gallery {
    .result-object__body {
-      @media (min-width:$md3+px) {
+      @media (min-width:$md4+px) {
          display: flex;
          justify-content: space-around;
          flex-wrap: wrap;
@@ -138,7 +138,7 @@
 .item-object {
    margin-bottom: 40px;
    background: #FFFFFF;
-   text-align: center;
+
 
    @media (max-width:$md3+px) {
       padding: 40px;
@@ -196,6 +196,10 @@
       color: #000000;
       margin-bottom: 15px;
 
+      @media (min-width:$md4+px) {
+         max-width: 70%;
+      }
+
       @media (min-width:1500px) {
          font-size: 20px;
          margin-bottom: 10px;
@@ -204,7 +208,6 @@
 
    &__list {
       display: flex;
-      justify-content: center;
       margin-bottom: 10px;
 
 

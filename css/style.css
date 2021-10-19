@@ -336,6 +336,8 @@ body {
   top: 0;
   right: 0;
   background-color: #fff;
+  padding-left: 70px;
+  padding-right: 70px;
   margin: 0; }
 
 input {
@@ -1292,17 +1294,18 @@ input::-webkit-inner-spin-button {
 
 .header {
   padding: 16px 30px;
-  position: relative; }
+  position: relative;
+  z-index: 3; }
   @media (max-width: 1400px) {
     .header {
       border-bottom: 1px solid rgba(199, 149, 126, 0.3); } }
   @media (min-width: 1400px) {
     .header {
-      padding: 25px 70px; }
+      padding: 12px 70px; }
       .header:after {
         content: '';
         position: absolute;
-        width: 100%;
+        width: calc(100% - 140px);
         top: 100%;
         left: 0;
         height: 1px;
@@ -1481,7 +1484,9 @@ input::-webkit-inner-spin-button {
       left: -26px;
       position: absolute; } }
   .dropdown-menu__item {
-    margin-bottom: 12px; }
+    padding: 7px 0; }
+    .dropdown-menu__item:not(:last-child) {
+      border-bottom: 1px solid rgba(229, 229, 229, 0.4); }
   @media (max-width: 1020.98px) {
     .dropdown-menu__link {
       color: #575757; } }
@@ -1490,7 +1495,7 @@ input::-webkit-inner-spin-button {
       font-size: 14px; } }
   @media (min-width: 1600px) {
     .dropdown-menu__link {
-      font-size: 23px; } }
+      font-size: 16px; } }
   .dropdown-menu__link:hover, .dropdown-menu__link:active {
     color: #C7957E;
     text-shadow: 0 0 0.75px #C7957E, 0 0 0.75px #C7957E; }
@@ -2057,7 +2062,7 @@ input::-webkit-inner-spin-button {
     -ms-flex: 0 1 349px;
     flex: 0 1 349px; }
 
-@media (min-width: 767.98px) {
+@media (min-width: 576.98px) {
   .result-object__gallery .result-object__body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2096,8 +2101,7 @@ input::-webkit-inner-spin-button {
 
 .item-object {
   margin-bottom: 40px;
-  background: #FFFFFF;
-  text-align: center; }
+  background: #FFFFFF; }
   @media (max-width: 767.98px) {
     .item-object {
       padding: 40px;
@@ -2140,6 +2144,9 @@ input::-webkit-inner-spin-button {
     line-height: 1.2;
     color: #000000;
     margin-bottom: 15px; }
+    @media (min-width: 576.98px) {
+      .item-object__desc {
+        max-width: 70%; } }
     @media (min-width: 1500px) {
       .item-object__desc {
         font-size: 20px;
@@ -2148,9 +2155,6 @@ input::-webkit-inner-spin-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     margin-bottom: 10px; }
     .item-object__list li {
       display: -webkit-box;
