@@ -210,7 +210,7 @@
    }
 
    &__item {
-      padding: 7px 0;
+      padding: 8px 26px;
 
       &:not(:last-child) {
          border-bottom: 1px solid rgba(229, 229, 229, 0.4);
@@ -246,7 +246,7 @@
          height: auto;
          opacity: 1;
          visibility: visible;
-         padding: 12px 26px;
+         padding-top: 12px;
       }
    }
 }
