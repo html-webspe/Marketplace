@@ -284,6 +284,8 @@
    }
 
    &__btn {
+      border: 2px solid transparent;
+
       &:first-child {
          margin-bottom: 10px;
       }

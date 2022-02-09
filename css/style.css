@@ -2209,8 +2209,10 @@ input::-webkit-inner-spin-button {
   @media (min-width: 767.98px) {
     .item-object__button {
       padding: 0 10px 10px 10px; } }
-  .item-object__btn:first-child {
-    margin-bottom: 10px; }
+  .item-object__btn {
+    border: 2px solid transparent; }
+    .item-object__btn:first-child {
+      margin-bottom: 10px; }
   .item-object__btn--transparent {
     border: 2px solid #C7957E;
     background-color: transparent; }
