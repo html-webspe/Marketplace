@@ -2139,7 +2139,7 @@ input::-webkit-inner-spin-button {
     text-transform: uppercase; }
     @media (min-width: 1020.98px) {
       .item-object__title {
-        font-size: 28px;
+        font-size: 30px;
         margin-bottom: 6px; } }
   .item-object__desc {
     font-weight: 600;
