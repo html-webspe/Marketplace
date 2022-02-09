@@ -190,7 +190,7 @@
       margin-bottom: 10px;
       text-transform: uppercase;
 
-      @media (min-width:$md1+px) {
+      @media (min-width:$md2+px) {
          font-size: 28px;
          margin-bottom: 6px;
       }
@@ -208,7 +208,7 @@
       color: #000000;
       margin-bottom: 15px;
 
-      @media (min-width:$md1+px) {
+      @media (min-width:$md2+px) {
          font-size: 17px;
       }
 
@@ -229,7 +229,7 @@
          @include adaptiv-font(20, 12);
          color: #575757;
 
-         @media (min-width:$md1+px) {
+         @media (min-width:$md2+px) {
             font-size: 17px;
          }
 
@@ -249,7 +249,7 @@
       margin-bottom: 8px;
       font-size: 16px;
 
-      @media (min-width:$md1+px) {
+      @media (min-width:$md2+px) {
          font-size: 17px;
       }
 
@@ -267,7 +267,7 @@
       color: $acentColor;
       margin-bottom: 16px;
 
-      @media (min-width:$md1+px) {
+      @media (min-width:$md2+px) {
          font-size: 28px;
       }
 
