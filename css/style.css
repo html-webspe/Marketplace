@@ -2199,7 +2199,7 @@ input::-webkit-inner-spin-button {
     margin-bottom: 16px; }
     @media (min-width: 1020.98px) {
       .item-object__price {
-        font-size: 28px; } }
+        font-size: 24px; } }
     @media (min-width: 1500px) {
       .item-object__price {
         margin-bottom: 12px;
