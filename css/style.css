@@ -2120,9 +2120,9 @@ input::-webkit-inner-spin-button {
     width: 100%;
     height: 176px;
     margin-bottom: 16px; }
-    @media (min-width: 1500px) {
+    @media (min-width: 1020.98px) {
       .item-object__img {
-        height: 252px; } }
+        height: 210px; } }
     .item-object__img img {
       position: absolute;
       top: 0;

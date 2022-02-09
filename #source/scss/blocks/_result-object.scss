@@ -168,8 +168,8 @@
       height: 176px;
       margin-bottom: 16px;
 
-      @media (min-width:1500px) {
-         height: 252px;
+      @media (min-width:$md2+px) {
+         height: 210px;
       }
 
       img {
