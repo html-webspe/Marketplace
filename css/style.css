@@ -2141,8 +2141,6 @@ input::-webkit-inner-spin-button {
       .item-object__title {
         font-size: 28px;
         margin-bottom: 6px; } }
-    .item-object__title.bold {
-      font-weight: bold; }
   .item-object__desc {
     font-weight: 600;
     font-size: 16px;
