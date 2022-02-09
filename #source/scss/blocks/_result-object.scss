@@ -281,6 +281,11 @@
 
    &__btn {
       border: 2px solid transparent;
+      padding: 17px 0;
+
+      @media (min-width:$md2+px) {
+         font-size: 17px;
+      }
 
       &:first-child {
          margin-bottom: 10px;
@@ -292,5 +297,6 @@
    &__btn--transparent {
       border: 2px solid #C7957E;
       background-color: transparent;
+
    }
 }

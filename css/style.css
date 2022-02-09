@@ -2208,7 +2208,11 @@ input::-webkit-inner-spin-button {
     .item-object__button {
       padding: 0 10px 10px 10px; } }
   .item-object__btn {
-    border: 2px solid transparent; }
+    border: 2px solid transparent;
+    padding: 17px 0; }
+    @media (min-width: 1020.98px) {
+      .item-object__btn {
+        font-size: 17px; } }
     .item-object__btn:first-child {
       margin-bottom: 10px; }
   .item-object__btn--transparent {
