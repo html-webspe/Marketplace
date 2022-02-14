@@ -23,7 +23,7 @@
          <img src="img/logo.svg" alt="logo" />
       </div>
 
-      <div class="header-menu__icon">
+      <div class="header-menu__icon menu__icon">
          <span></span>
       </div>
       <nav class="header__menu menu-header">
@@ -1023,7 +1023,7 @@
 </section>
             <section class="section experts">
    <div class='container experts__container'>
-      <h2 class="section__title experts__title">ЭКСПЕРТЫ РАССКАЗЫВАЮТ <br> ПРО ПРЕСНЕНСКИЙ РАЙОН</h2>
+      <h2 class="section__title experts__title"> <span>ЭКСПЕРТЫ</span> РАССКАЗЫВАЮТ ПРО ПРЕСНЕНСКИЙ РАЙОН</h2>
 
       <div class="experts-slider swiper-container">
          <!-- Additional required wrapper -->
@@ -1042,6 +1042,7 @@
                         Москвы.
                      </p>
                   </div>
+                  <img src="img/experts/pen.png" class="pen" alt="pen-img" />
                </div>
             </div>
             <div class="swiper-slide experts-slider__slide">
@@ -1065,7 +1066,7 @@
          <div class="experts-slider__pagination slider-pagination">
          </div>
 
-         <!-- If we need navigation buttons -->
+
          <div class="experts-slider__controls slider-controls">
             <div class=" slider-controls__btn slider-controls__btn-prev icon-hexagon">
                <span class="icon-slider-arrow"></span>
@@ -1077,7 +1078,7 @@
          </div>
       </div>
    </div>
-   <img src="img/experts/pen.png" class="pen" alt="pen-img" />
+
 
    <img src="img/decor-section.svg" class="object__decor-top" alt="decor" />
 </section>
@@ -1110,27 +1111,40 @@
          <a href="/" class="logo footer__logo">
             <img src="img/logo.svg" alt="logo" />
          </a>
-
+         <div class="footer-menu__icon menu__icon">
+            <span></span>
+         </div>
       </div>
-      <nav class="footer__menu menu-footer">
+      <nav class="footer__menu menu-footer menu-footer__mobile">
          <ul class="menu-footer__list">
-            <li class="menu-footer__item"><a href="#" class="menu-footer__link">Жилые комплексы</a></li>
-            <li class="menu-footer__item"><a href="#" class="menu-footer__link">Подобрать объект</a></li>
-            <li class="menu-footer__item"><a href="#" class="menu-footer__link">Инфраструктура</a></li>
-            <li class="menu-footer__item"><a href="#" class="menu-footer__link">Контакты</a></li>
+            <li class="menu-footer__item" data-da="footer__desktop,1,767.98">
+               <a href="#" class="menu-footer__link">Жилые комплексы</a></li>
+            <li class="menu-footer__item" data-da="footer__desktop,2,767.98"><a href="#"
+                  class="menu-footer__link">Подобрать объект</a></li>
+            <li class="menu-footer__item" data-da="footer__desktop,3,767.98"><a href="#"
+                  class="menu-footer__link">Инфраструктура</a></li>
+            <li class="menu-footer__item" data-da="footer__desktop,4,767.98"><a href="#"
+                  class="menu-footer__link">Контакты</a></li>
+         </ul>
+      </nav>
+      <nav class="footer__menu menu-footer">
+         <ul class="menu-footer__list footer__desktop">
             <li class="menu-footer__item"><a href="#" class="menu-footer__link">Новостройки</a></li>
             <li class="menu-footer__item"><a href="#" class="menu-footer__link">Вторичная недвижимость</a></li>
             <li class="menu-footer__item"><a href="#" class="menu-footer__link">Переуступка</a></li>
             <li class="menu-footer__item"><a href="#" class="menu-footer__link">Эксклюзив</a></li>
          </ul>
       </nav>
-      <div class="footer__social" data-da="footer__main,2,1199.98">
-         <a href="#" class="footer__social-item icon-whatsapp"></a>
-         <a href="#" class="footer__social-item icon-telegram"></a>
+      <a href="tel:+74950000000" class="footer__tel icon-phone">+7 495 000 00 00</a>
+
+      <div class="footer__social">
+         <a href="" class="social__item footer__social-item icon-phone"></a>
+         <a href="#" class="social__item footer__social-item icon-whatsapp"></a>
+         <a href="#" class="social__item footer__social-item icon-telegram"></a>
       </div>
-      <div class="footer__text">
-         ООО «Арт Истейт»,
-         Москва, ул. Пресненская наб. 12, Башня "Федерация Восток", 57 этаж, пом. 16
+      <div class="footer__text" data-da="footer__social,3,767.98">
+         <span>ООО «Арт Истейт»,</span>
+         <span>Москва, ул. Пресненская наб. 12,</span> Башня "Федерация Восток", <span>57 этаж, пом. 16</span>
          ИНН 381706330900 ОГРН 312784701600758
       </div>
 

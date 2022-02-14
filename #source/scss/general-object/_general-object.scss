@@ -1,12 +1,29 @@
+.main-general-object {
+   padding-top: 65px;
+
+   .result-object__body {
+      margin-bottom: 60px;
+   }
+}
+
 .page-general-object {
    .header {
       background-color: #000;
       color: #fff;
    }
 
+   .menu-header__link {
+      color: inherit;
+   }
+
    .crumbs {
       padding: 0;
       margin-bottom: 29px;
+
+      @media (max-width:$md3+px) {
+         display: none;
+      }
+
    }
 
    .table-head__group {

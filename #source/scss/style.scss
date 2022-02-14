@@ -13,7 +13,6 @@
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 * {
@@ -67,8 +66,9 @@ body {
   font-weight: 500;
   color: $acentColorDarck;
 
-  @media (min-width:$md1+px) {
-    font-size: 20px;
+  @media (min-width:$md2+px) {
+    font-size: 22px;
+    line-height: 27px;
   }
 }
 
@@ -77,8 +77,6 @@ body {
   width: 100%;
   min-height: 100%;
   overflow: hidden;
-
-  &.loaded {}
 }
 
 .section {
@@ -111,8 +109,11 @@ body {
   width: 100%;
   padding-left: $containerPadding;
   padding-right: $containerPadding;
-  position: relative;
 
+  @media (min-width:$md3+px) and (max-width:$md2+px) {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
 
   &-xl {
     max-width: 1187px;
@@ -120,6 +121,8 @@ body {
 }
 
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
+
+
 @media (min-width:$md3+px) {
   .text-aling-center {
     text-align: center;
@@ -153,8 +156,12 @@ body {
 }
 
 .crumbs {
-  padding-left: 15px;
+
   margin: 27px 0px 65px 0px;
+
+  @media (min-width:$md3+px) {
+    padding-left: 15px;
+  }
 
   @media (min-width:1600px) {
     margin: 46px 0px 100px 0px;
@@ -196,39 +203,43 @@ body {
 
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
-
-@import "ui/_btn";
-@import "ui/_ui";
-@import "ui/_modal";
-@import "ui/_range";
-
-@import "blocks/_form";
-
-@import "blocks/_filter-dropdown";
-
 @import "blocks/_title";
-@import "blocks/_download";
+@import "ui/_btn";
+@import "ui/_range";
+@import "ui/_ui";
 
 @import "blocks/_header-copy";
 @import "blocks/_home-copy";
 
 /*   OBGECT   */
+@import "blocks/_filter-dropdown";
 @import "blocks/_object-copy";
 @import "blocks/_filter-head";
 @import "blocks/_select-filter";
 @import "blocks/_result-object";
-
-
 /*   OBGECT   */
 
-
 @import "blocks/_infrasrtucture";
-
-@import "blocks/_callback";
+@import "blocks/_download";
 @import "blocks/_experts";
+@import "blocks/_callback";
+
 
 @import "blocks/_footer";
+@import "ui/_modal";
+
+
 
 @import "object/_object";
-@import "general-object/_general-object";
 @import "general-object/_about";
+@import "general-object/_general-object";
+/*
+
+
+
+@import "blocks/_form";
+
+
+
+
+**/

@@ -38,6 +38,16 @@ if (iconMenu) {
    })
 }
 
+const iconMenuFooter = document.querySelector('.footer-menu__icon');
+
+if (iconMenuFooter) {
+   const menuFooterMobile = document.querySelector('.menu-footer__mobile');
+
+   iconMenuFooter.addEventListener('click', () => {
+      iconMenuFooter.classList.toggle('active');
+      menuFooterMobile.classList.toggle('active');
+   })
+}
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
@@ -70,17 +80,7 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive)*/
 
 //====================  <!-- Header-Fixed -->========================//
-//====================  <!-- Up -->========================//
 
-const up = document.getElementById('action-up');
-up.addEventListener('click', () => {
-   window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-   });
-});
-
-//====================  <!-- Up -->========================//
 
 //====================  <!-- GoTO -->  ========================//
 const links = document.querySelectorAll('.scroll-to');
@@ -267,12 +267,10 @@ tabsBtn.forEach((item) => {
 
 const swiper = new Swiper('.swiper-container', {
    loop: true,
-   // If we need pagination
+   speed: 1000,
    pagination: {
-      el: '.slider-pagination',
+      el: '.experts-slider__pagination',
    },
-
-   // Navigation arrows
    navigation: {
       nextEl: '.slider-controls__btn-next',
       prevEl: '.slider-controls__btn-prev',

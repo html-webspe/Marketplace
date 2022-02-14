@@ -26,6 +26,10 @@
          width: 245px;
          margin-bottom: 19px;
       }
+
+      @media (min-width:$md2+px) {
+         width: 350px;
+      }
    }
 }
 
@@ -97,7 +101,7 @@
 
       p {
          position: relative;
-         font-family: 'Forum';
+         font-family: 'Montserrat';
          @include adaptiv-font(24, 16);
          line-height: 1.2;
          text-transform: uppercase;

@@ -34,6 +34,10 @@
          padding-right: 24px;
       }
 
+      @media (min-width:$md3+px) and (max-width:$md2+px) {
+         flex-wrap: wrap;
+      }
+
       @media (min-width:$md1+px) {
          padding-left: 38px;
          padding-right: 27px;
@@ -42,6 +46,11 @@
 
    &__item {
       position: relative;
+
+      @media (min-width:$md3+px) and (max-width:$md2+px) {
+         flex: 0 0 50%;
+         margin-bottom: 21px;
+      }
 
       &-open-right {
          .select-filter__dropdown {
@@ -70,11 +79,6 @@
          margin-bottom: 21px;
          width: 100%;
       }
-
-      @media (min-width:$md3+px) and (max-width:$md2+px) {
-         font-size: 14px;
-      }
-
 
       &:before {
          color: $acentColorLight;

@@ -21,6 +21,7 @@
    &__col-description {
       @media (max-width:$md3+px) {
          margin-bottom: 84px;
+         text-align: center;
       }
 
       @media (min-width:$md4+px) and (max-width:$md3+px) {
@@ -172,6 +173,11 @@
          max-width: 60%;
          padding-right: 50px;
       }
+   }
+
+   &__btn {
+      padding-left: 43px;
+      padding-right: 43px;
    }
 }
 

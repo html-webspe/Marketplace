@@ -1,50 +1,55 @@
+.suptitle {
+   font-size: 24px;
+   line-height: 29px;
+   color: #C7957E;
+   margin-bottom: 16px;
+
+   @media (min-width:$md2+px) {
+      font-size: 32px;
+      line-height: 39px;
+   }
+}
+
 .title {
    font-family: 'Forum';
+   font-weight: normal;
    font-size: 36px;
    line-height: 42px;
-   font-weight: normal;
    letter-spacing: 0.05em;
    text-transform: uppercase;
    color: #000000;
-   margin-bottom: 94px;
+   position: relative;
+   z-index: 1;
 
-   @media (min-width:1700px) {
+   @media (min-width:$md3+px) {
+      font-size: 36px;
+      line-height: 42px;
+   }
+
+   @media (min-width:$md2+px) {
       font-size: 60px;
       line-height: 66px;
    }
-
 
    span {
       display: block;
    }
 }
 
-.suptitle {
-   font-size: 24px;
-   line-height: 29px;
-   color: $acentColor;
-   margin-bottom: 16px;
-
-
-   @media (min-width:$md1+px) {
-      font-size: 32px;
-      line-height: 39px;
-      margin-bottom: 10px;
-   }
-}
-
 .section__title {
    font-family: 'Forum';
    font-weight: normal;
-   @include adaptiv-font(46, 30);
-   line-height: 1.2;
+   font-size: 30px;
+   line-height: 33px;
+   text-align: center;
    letter-spacing: 0.05em;
    text-transform: uppercase;
-   color: $acentColorLight;
-   text-align: center;
+   color: #C7957E;
    margin-bottom: 25px;
 
    @media (min-width:$md2+px) {
+      font-size: 46px;
+      line-height: 72px;
       margin-bottom: 48px;
    }
 }

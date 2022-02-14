@@ -41,15 +41,6 @@
       }
    }
 
-   /*&__map {
-      @media (min-width:$md2+px) {
-         position: absolute;
-         max-width: initial;
-         margin-left: -87px;
-         max-height: 518px;
-      }
-   }*/
-
    &__body {
       @media (min-width:$md2+px) {
          display: flex;

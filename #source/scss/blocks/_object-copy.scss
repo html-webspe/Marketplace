@@ -9,11 +9,22 @@
 }
 
 .object {
+
+   &__title {
+      @media (min-width:$md3+px) {
+         margin-bottom: 48px;
+      }
+   }
+
    &__decor-top {
       position: absolute;
       top: 0;
       right: 0;
       width: 40%;
+
+      @media (max-width:$md3+px) {
+         right: -36px;
+      }
 
       @media (min-width:$md3+px) {
          width: 15%;
