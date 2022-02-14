@@ -2287,6 +2287,9 @@ input {
     @media (min-width: 767.98px) {
       .experts__title {
         padding: 0 100px; } }
+    @media (min-width: 1279.98px) {
+      .experts__title {
+        padding: 0 250px; } }
   @media (min-width: 999.98px) {
     .experts-slider__slide {
       display: -webkit-box;
