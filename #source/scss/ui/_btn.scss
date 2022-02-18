@@ -21,6 +21,12 @@
    &:hover {
       background-color: $acentColor;
    }
+
+   &.btn-load {
+      border: 2px solid #C7957E;
+      background-color: transparent;
+      padding: 17px 74px;
+   }
 }
 
 //</BUTTONS>====================================================================================================

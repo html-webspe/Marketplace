@@ -198,14 +198,6 @@
    }
 }
 
-.active {}
-
-.slider-block {}
-
-.swiper-wrapper {}
-
-.swiper-slide {}
-
 .info-object {
 
    @media (max-width:$md1+px) {
@@ -361,12 +353,12 @@
          }
 
          &:last-child {
-            margin-left: -26px;
-            width: 286px;
+            //margin-left: -26px;
+            //width: 286px;
          }
 
          &:nth-child(2) {
-            margin-left: -27px;
+            //margin-left: -27px;
          }
       }
 
@@ -387,4 +379,5 @@
          margin-right: 5px;
       }
    }
+
 }

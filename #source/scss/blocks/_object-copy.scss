@@ -1,9 +1,9 @@
 .s-object {
    background: linear-gradient(180deg, #FAFAFA 0%, #FFFFFF 100%);
    padding-top: 67px;
+   padding-bottom: 60px;
 
    @media (min-width:$md2+px) {
-      padding-bottom: 60px;
       padding-top: 87px;
    }
 }

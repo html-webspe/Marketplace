@@ -268,6 +268,7 @@ tabsBtn.forEach((item) => {
 const swiper = new Swiper('.swiper-container', {
    loop: true,
    speed: 1000,
+   autoHeight: true,
    pagination: {
       el: '.experts-slider__pagination',
    },

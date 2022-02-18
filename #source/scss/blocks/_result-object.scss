@@ -79,6 +79,8 @@
 
 
 .item-object {
+   display: flex;
+   flex-direction: column;
    margin-bottom: 40px;
    background: #FFFFFF;
 
@@ -93,6 +95,8 @@
    }
 
    &__content {
+      flex-grow: 1;
+
       @media (max-width:$md3+px) {
          text-align: center;
       }
